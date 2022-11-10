@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2021 Huawei Device Co., Ltd.
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,16 +16,19 @@
 @Component
 export struct ImageComponent {
   private color: ResourceStr = '';
+  private imgLength: number = 32;
+  private times: number = 2;
   @State imageSrc: ResourceStr = '';
-  private imgLength: number = 32
 
   build() {
     Stack() {
       Circle()
-        .width(this.imgLength * 2)
-        .height(this.imgLength * 2)
-        .fill(this.color)
-      Image(this.imageSrc).height(this.imgLength).width(this.imgLength)
+        .width(this.imgLength * this.times)
+        .height(this.imgLength * this.times)
+        .fill(this.color);
+      Image(this.imageSrc)
+        .height(this.imgLength)
+        .width(this.imgLength);
     }
   }
 }
