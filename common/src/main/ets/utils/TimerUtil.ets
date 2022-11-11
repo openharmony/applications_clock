@@ -15,13 +15,13 @@
 
 import ConfigData from "./ConfigData";
 
-export class TimerUtil {
+export default class TimerUtil {
   /**
    * Time format conversion
    *
    * @param timestamp
    */
-  timeFormat(timestamp: number) {
+  static timeFormat(timestamp: number) {
     if (timestamp <= 0) {
       return "00:00.00";
     }
@@ -48,11 +48,7 @@ export class TimerUtil {
    *
    * @param num
    */
-  addZero(num) {
+  static addZero(num) {
     return (num < 10 ? "0" + num : num).toString();
   }
 }
-
-let mTimerUtil = new TimerUtil();
-
-export default mTimerUtil as TimerUtil;
