@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "alarm_clock",
+      "value": "闹钟"
+    },
+    {
+      "name": "stopwatch",
+      "value": "秒表"
+    },
+    {
+      "name": "timer_clock",
+      "value": "计时器"
+    }
+  ]
+}

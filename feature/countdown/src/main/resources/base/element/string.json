@@ -6,15 +6,15 @@
     },
     {
       "name": "hour",
-      "value": "时"
+      "value": "hour"
     },
     {
       "name": "minute",
-      "value": "分"
+      "value": "minute"
     },
     {
       "name": "second",
-      "value": "秒"
+      "value": "minute"
     }
   ]
 }
