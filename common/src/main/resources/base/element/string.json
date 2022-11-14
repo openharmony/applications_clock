@@ -6,15 +6,15 @@
     },
     {
       "name": "alarm_clock",
-      "value": "闹钟"
+      "value": "Alarm clock"
     },
     {
       "name": "stopwatch",
-      "value": "秒表"
+      "value": "stopwatch"
     },
     {
       "name": "timer_clock",
-      "value": "计时器"
+      "value": "hour meter"
     }
   ]
 }
