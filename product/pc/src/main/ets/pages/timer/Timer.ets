@@ -22,7 +22,7 @@ import { TimerControl } from './TimerControl';
 
 @Component
 export struct Timer {
-  timerController: TimerController = new TimerController();
+  private timerController: TimerController = new TimerController();
   private timeList: Array<number> = [];
   @State lastTimeMs: number = 0;
 

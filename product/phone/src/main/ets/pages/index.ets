@@ -20,7 +20,7 @@ import { CountDown } from './Countdown';
 @Entry
 @Component
 struct Index {
-  featureList: Array<any> = [
+  private featureList: Array<any> = [
     {
       name: $r('app.string.alarm_clock'),
       icon: $r('app.media.ic_clock_clock'),

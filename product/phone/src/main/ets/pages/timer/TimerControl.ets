@@ -19,8 +19,8 @@ import { ImageComponent, ConfigData } from '@ohos/common';
 @Component
 export struct TimerControl {
   private timerController: TimerController = new TimerController();
-  @State state: TimerState = TimerState.IDLE;
   private timeList: Array<number> = [];
+  @State state: TimerState = TimerState.IDLE;
 
   aboutToAppear() {
     this.timerController.setStateUpdateListener((state) => {
