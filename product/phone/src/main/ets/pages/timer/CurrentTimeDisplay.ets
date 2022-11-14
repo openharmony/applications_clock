@@ -19,8 +19,8 @@ import { TimerUtil, ConfigData } from '@ohos/common';
 @Component
 export struct CurrentTimeDisplay {
   @State currentTime: number = 0;
-  @Prop lastTimeMs: number;
   @State timerController: TimerController = new TimerController();
+  @Prop lastTimeMs: number;
 
   aboutToAppear() {
     this.timerController.setTimeUpdateListener((currentTimeMs: number) => {
