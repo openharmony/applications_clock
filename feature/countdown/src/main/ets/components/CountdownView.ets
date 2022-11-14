@@ -104,9 +104,9 @@ export struct CountdownView {
     Canvas(this.context)
       .width(this.viewSize)
       .height(this.viewSize)
-      .backgroundColor($r("app.color.background_color_white"))
+      .backgroundColor($r('app.color.background_color_white'))
       .border({ radius: this.viewSize })
-      .shadow({ radius: $r("app.float.radius_value_26_5"), color: this.shadowColor })
+      .shadow({ radius: $r('app.float.radius_value_26_5'), color: this.shadowColor })
       .onReady(() => {
         this.draw();
       });

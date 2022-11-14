@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { TimerController } from "@ohos/timer";
+import { TimerController } from '@ohos/timer';
 import { ConfigData } from '@ohos/common';
 import { TimerClock } from './TimerClock';
 import { CurrentTimeDisplay } from './CurrentTimeDisplay';
@@ -40,31 +40,31 @@ export struct Timer {
     Row() {
       Column() {
         Row() {
-          Text($r("app.string.stopwatch"))
-            .fontSize($r("app.float.font_30"))
+          Text($r('app.string.stopwatch'))
+            .fontSize($r('app.float.font_30'))
             .fontWeight(500)
-            .fontColor($r("app.color.text_color"))
-            .lineHeight($r("app.float.wh_value_21"))
+            .fontColor($r('app.color.text_color'))
+            .lineHeight($r('app.float.wh_value_21'))
         }.width(ConfigData.WH_100_100)
-        .padding({ left: $r("app.float.wh_value_24") })
-        .height($r("app.float.wh_value_28"))
+        .padding({ left: $r('app.float.wh_value_24') })
+        .height($r('app.float.wh_value_28'))
 
         Column() {
           TimerClock({ timerController: this.timerController })
-        }.margin({ top: $r("app.float.wh_value_38"), bottom: $r("app.float.wh_value_38") })
+        }.margin({ top: $r('app.float.wh_value_38'), bottom: $r('app.float.wh_value_38') })
 
         CurrentTimeDisplay({ timerController: this.timerController, lastTimeMs: this.lastTimeMs })
       }
       .height(ConfigData.WH_100_100)
-      .width($r("app.float.wh_value_304"))
+      .width($r('app.float.wh_value_304'))
 
-      Divider().vertical(true).width($r("app.float.wh_value_0_5")).opacity($r("app.float.opacity_1"))
+      Divider().vertical(true).width($r('app.float.wh_value_0_5')).opacity($r('app.float.opacity_1'))
       Column() {
         TimeOfRecord({ timeList: this.timeList, lastTimeMs: this.lastTimeMs })
         TimerControl({ timerController: this.timerController, timeList: this.timeList })
       }
       .height(ConfigData.WH_100_100)
-      .width($r("app.float.wh_value_275_5"))
+      .width($r('app.float.wh_value_275_5'))
     }
   }
 }

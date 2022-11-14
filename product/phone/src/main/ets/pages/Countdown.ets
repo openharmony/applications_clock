@@ -18,7 +18,7 @@ import { ImageComponent, ConfigData } from '@ohos/common';
 
 @Component
 export struct CountDown {
-  private headName: ResourceStr = $r("app.string.timer_clock");
+  private headName: ResourceStr = $r('app.string.timer_clock');
   private controller: CountdownController = new CountdownController();
   private viewSize: number = 373.5;
   @State totalTime: number = 0;
@@ -32,13 +32,13 @@ export struct CountDown {
     Column() {
       Row() {
         Text(this.headName)
-          .fontSize($r("app.float.font_48"))
-          .fontColor($r("app.color.text_color"))
-          .lineHeight($r("app.float.wh_value_44"))
+          .fontSize($r('app.float.font_48'))
+          .fontColor($r('app.color.text_color'))
+          .lineHeight($r('app.float.wh_value_44'))
           .fontWeight(FontWeight.Regular)
           .textOverflow({ overflow: TextOverflow.Ellipsis })
           .textAlign(TextAlign.Center)
-          .margin({ top: $r("app.float.distance_18_5"), bottom: $r("app.float.distance_12") });
+          .margin({ top: $r('app.float.distance_18_5'), bottom: $r('app.float.distance_12') });
       }
       .width(ConfigData.WH_100_100);
 
@@ -52,12 +52,12 @@ export struct CountDown {
               state: this.state
             });
           }
-          .margin({ bottom: $r("app.float.distance_16"), top: $r("app.float.distance_16") });
+          .margin({ bottom: $r('app.float.distance_16'), top: $r('app.float.distance_16') });
 
           Text(this.hour + ':' + this.minute + ':' + this.second)
-            .fontSize($r("app.float.font_40"))
-            .fontColor($r("app.color.text_color"))
-            .lineHeight($r("app.float.wh_value_32"))
+            .fontSize($r('app.float.font_40'))
+            .fontColor($r('app.color.text_color'))
+            .lineHeight($r('app.float.wh_value_32'))
             .fontWeight(FontWeight.Regular);
 
           Column() {
@@ -68,19 +68,19 @@ export struct CountDown {
               callBack: this.timeSelectCallBack
             });
           }
-          .margin({ top: $r("app.float.distance_42"), bottom: $r("app.float.distance_24") })
+          .margin({ top: $r('app.float.distance_42'), bottom: $r('app.float.distance_24') })
           .visibility((this.state == CountdownState.IDLE || this.state == CountdownState.PREPARED) ? Visibility.Visible : Visibility.None);
         }
       }
-      .height($r("app.float.wh_value_516"))
+      .height($r('app.float.wh_value_516'))
       .width(ConfigData.WH_100_100)
       .scrollBar(BarState.Off);
 
       Row() {
         Row() {
-          ImageComponent({ color: $r("app.color.white"), imageSrc: $r('app.media.ic_clock_refresh') });
+          ImageComponent({ color: $r('app.color.white'), imageSrc: $r('app.media.ic_clock_refresh') });
         }
-        .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r("app.float.opacity_4") : $r("app.float.opacity_full"))
+        .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r('app.float.opacity_4') : $r('app.float.opacity_full'))
         .enabled((this.state == CountdownState.PREPARED || this.state == CountdownState.PAUSED || this.state == CountdownState.RUNNING))
         .onClick(() => {
           this.controller.reset();
@@ -88,12 +88,12 @@ export struct CountDown {
 
         Row() {
           ImageComponent({
-            color: $r("app.color.selected_text_color"),
+            color: $r('app.color.selected_text_color'),
             imageSrc: this.state == CountdownState.RUNNING ? $r('app.media.ic_clock_suspend') : $r('app.media.ic_clock_play')
           });
         }
-        .margin({ left: $r("app.float.distance_48"), right: $r("app.float.distance_48") })
-        .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r("app.float.opacity_4") : $r("app.float.opacity_full"))
+        .margin({ left: $r('app.float.distance_48'), right: $r('app.float.distance_48') })
+        .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r('app.float.opacity_4') : $r('app.float.opacity_full'))
         .enabled((this.state == CountdownState.PREPARED || this.state == CountdownState.PAUSED || this.state == CountdownState.RUNNING))
         .onClick(() => {
           if (this.state == CountdownState.PREPARED) {
@@ -107,15 +107,15 @@ export struct CountDown {
         })
 
         Row() {
-          ImageComponent({ color: $r("app.color.white"), imageSrc: $r('app.media.ic_clock_sound') });
+          ImageComponent({ color: $r('app.color.white'), imageSrc: $r('app.media.ic_clock_sound') });
         }
         .onClick(() => {
         });
-      }.margin({ top: $r("app.float.distance_16"), bottom: $r("app.float.distance_16") });
+      }.margin({ top: $r('app.float.distance_16'), bottom: $r('app.float.distance_16') });
     }
     .width(ConfigData.WH_100_100)
     .height(ConfigData.WH_100_100)
-    .padding({ left: $r("app.float.distance_32"), right: $r("app.float.distance_32") });
+    .padding({ left: $r('app.float.distance_32'), right: $r('app.float.distance_32') });
   }
 
   /**

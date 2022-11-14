@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import ConfigData from "./ConfigData";
+import ConfigData from './ConfigData';
 
 export default class TimerUtil {
   /**
@@ -21,34 +21,34 @@ export default class TimerUtil {
    *
    * @param timestamp
    */
-  static timeFormat(timestamp: number) {
+  static timeFormat(timestamp: number): string {
     if (timestamp <= 0) {
-      return "00:00.00";
+      return `00:00.00`;
     }
-    let timeStr = "";
+    let timeStr = ``;
     let day = Math.floor(timestamp / ConfigData.ONE_DAY_TIME);
     if (day > 0) {
-      timeStr += this.addZero(day) + ":";
+      timeStr += `${this.addZero(day)}:`;
     }
     let hour = Math.floor(timestamp % ConfigData.ONE_DAY_TIME / ConfigData.ONE_HOUR_TIME);
     if (hour > 0 || day > 0) {
-      timeStr += this.addZero(hour) + ":";
+      timeStr += `${this.addZero(hour)}:`;
     }
     let min = Math.floor(timestamp % ConfigData.ONE_HOUR_TIME / ConfigData.ONE_MINUTE_TIME);
-    timeStr += this.addZero(min) + ":";
+    timeStr += `${this.addZero(min)}:`;
     let sec = Math.floor(timestamp % ConfigData.ONE_MINUTE_TIME / ConfigData.ONE_SECOND_TIME);
-    timeStr += this.addZero(sec) + ".";
+    timeStr += `${this.addZero(sec)}.`;
     let mSec = Math.floor(timestamp % ConfigData.ONE_SECOND_TIME / 10);
     timeStr += this.addZero(mSec);
     return timeStr;
   }
 
   /**
-   * If the number is less than 10, add "0".
+   * If the number is less than 10, add '0".
    *
    * @param num
    */
-  static addZero(num) {
-    return (num < 10 ? "0" + num : num).toString();
+  static addZero(num): string {
+    return (num < 10 ? `0${num}` : num).toString();
   }
 }

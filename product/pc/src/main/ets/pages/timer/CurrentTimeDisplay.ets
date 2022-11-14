@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { TimerController } from "@ohos/timer";
+import { TimerController } from '@ohos/timer';
 import { TimerUtil, ConfigData } from '@ohos/common';
 
 @Component
@@ -31,15 +31,15 @@ export struct CurrentTimeDisplay {
   build() {
     Column() {
       Text(TimerUtil.timeFormat(this.currentTime))
-        .lineHeight($r("app.float.wh_value_16"))
-        .fontColor($r("app.color.text_color"))
+        .lineHeight($r('app.float.wh_value_16'))
+        .fontColor($r('app.color.text_color'))
         .fontWeight(500)
-        .fontSize($r("app.float.font_20"))
+        .fontSize($r('app.float.font_20'))
       Text(TimerUtil.timeFormat(this.currentTime - this.lastTimeMs))
-        .lineHeight($r("app.float.wh_value_12"))
-        .fontColor($r("app.color.text_color"))
-        .opacity($r("app.float.opacity_6"))
-        .fontSize($r("app.float.font_14"))
+        .lineHeight($r('app.float.wh_value_12'))
+        .fontColor($r('app.color.text_color'))
+        .opacity($r('app.float.opacity_6'))
+        .fontSize($r('app.float.font_14'))
         .visibility(this.lastTimeMs > 0 ? Visibility.Visible : Visibility.Hidden)
     }.width(ConfigData.WH_100_100)
   }

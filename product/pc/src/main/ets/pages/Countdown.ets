@@ -18,7 +18,7 @@ import { ImageComponent, ConfigData } from '@ohos/common';
 
 @Component
 export struct CountDown {
-  private headName: ResourceStr = $r("app.string.timer_clock");
+  private headName: ResourceStr = $r('app.string.timer_clock');
   private controller: CountdownController = new CountdownController();
   private viewSize: number = 232;
   private originRadius: number = 5;
@@ -39,13 +39,13 @@ export struct CountDown {
       Column() {
         Row() {
           Text(this.headName)
-            .fontSize($r("app.float.font_30"))
+            .fontSize($r('app.float.font_30'))
             .fontWeight(FontWeight.Regular)
-            .fontColor($r("app.color.text_color"))
-            .lineHeight($r("app.float.wh_value_21"));
+            .fontColor($r('app.color.text_color'))
+            .lineHeight($r('app.float.wh_value_21'));
         }.width(ConfigData.WH_100_100)
-        .padding({ left: $r("app.float.wh_value_24") })
-        .height($r("app.float.wh_value_28"));
+        .padding({ left: $r('app.float.wh_value_24') })
+        .height($r('app.float.wh_value_28'));
 
         Column() {
           CountdownView({
@@ -58,25 +58,25 @@ export struct CountDown {
             scaleHeight: this.scaleHeight,
             scalePadding: this.scalePadding
           });
-        }.margin({ top: $r("app.float.wh_value_38"), bottom: $r("app.float.wh_value_38") });
+        }.margin({ top: $r('app.float.wh_value_38'), bottom: $r('app.float.wh_value_38') });
 
         Column() {
           Text(this.hour + ':' + this.minute + ':' + this.second)
-            .lineHeight($r("app.float.wh_value_16"))
-            .fontColor($r("app.color.text_color"))
+            .lineHeight($r('app.float.wh_value_16'))
+            .fontColor($r('app.color.text_color'))
             .fontWeight(FontWeight.Regular)
-            .fontSize($r("app.float.font_20"));
+            .fontSize($r('app.float.font_20'));
         }.width(ConfigData.WH_100_100);
       }
       .height(ConfigData.WH_100_100)
-      .width($r("app.float.wh_value_304"));
+      .width($r('app.float.wh_value_304'));
 
-      Divider().vertical(true).width($r("app.float.wh_value_0_5"));
+      Divider().vertical(true).width($r('app.float.wh_value_0_5'));
       Column() {
         Column() {
           TimeSelectView({
-            marginRight: $r("app.float.distance_19"),
-            dividerMargin: $r("app.float.distance_19"),
+            marginRight: $r('app.float.distance_19'),
+            dividerMargin: $r('app.float.distance_19'),
             hour: $hour,
             minute: $minute,
             second: $second,
@@ -86,19 +86,19 @@ export struct CountDown {
         }
         .justifyContent(FlexAlign.Center)
         .visibility((this.state == CountdownState.IDLE || this.state == CountdownState.PREPARED) ? Visibility.Visible : Visibility.Hidden)
-        .padding($r("app.float.distance_12"))
-        .height($r("app.float.wh_value_324"))
+        .padding($r('app.float.distance_12'))
+        .height($r('app.float.wh_value_324'))
         .flexShrink(1);
 
         Row() {
           Row() {
             ImageComponent({
-              color: $r("app.color.white"),
-              imageSrc: $r("app.media.ic_clock_refresh"),
+              color: $r('app.color.white'),
+              imageSrc: $r('app.media.ic_clock_refresh'),
               imgLength: this.imgLength
             });
           }
-          .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r("app.float.opacity_4") : $r("app.float.opacity_full"))
+          .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r('app.float.opacity_4') : $r('app.float.opacity_full'))
           .enabled((this.state == CountdownState.PREPARED || this.state == CountdownState.PAUSED || this.state == CountdownState.RUNNING))
           .onClick(() => {
             this.controller.reset();
@@ -106,12 +106,12 @@ export struct CountDown {
 
           Row() {
             ImageComponent({
-              color: $r("app.color.selected_text_color"),
+              color: $r('app.color.selected_text_color'),
               imageSrc: this.state == CountdownState.RUNNING ? $r('app.media.ic_clock_suspend') : $r('app.media.ic_clock_play'),
               imgLength: this.imgLength
             });
           }
-          .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r("app.float.opacity_4") : $r("app.float.opacity_full"))
+          .opacity((this.state == CountdownState.IDLE || this.state == CountdownState.STOPPED) ? $r('app.float.opacity_4') : $r('app.float.opacity_full'))
           .enabled((this.state == CountdownState.PREPARED || this.state == CountdownState.PAUSED || this.state == CountdownState.RUNNING))
           .onClick(() => {
             if (this.state == CountdownState.PREPARED) {
@@ -126,7 +126,7 @@ export struct CountDown {
 
           Row() {
             ImageComponent({
-              color: $r("app.color.white"),
+              color: $r('app.color.white'),
               imageSrc: $r('app.media.ic_clock_sound'),
               imgLength: this.imgLength
             });
@@ -134,14 +134,14 @@ export struct CountDown {
           .onClick(() => {
           });
         }
-        .height($r("app.float.wh_value_24"))
+        .height($r('app.float.wh_value_24'))
         .width(ConfigData.WH_100_100)
         .justifyContent(FlexAlign.SpaceBetween)
-        .margin({ bottom: $r("app.float.distance_10"), top: $r("app.float.distance_4") })
-        .padding({ left: $r("app.float.distance_84"), right: $r("app.float.distance_84") });
+        .margin({ bottom: $r('app.float.distance_10'), top: $r('app.float.distance_4') })
+        .padding({ left: $r('app.float.distance_84'), right: $r('app.float.distance_84') });
       }
       .height(ConfigData.WH_100_100)
-      .width($r("app.float.wh_value_275_5"));
+      .width($r('app.float.wh_value_275_5'));
     }
   }
 
