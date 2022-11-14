@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { TimerView, TimerController } from "@ohos/timer";
+import { TimerView, TimerController } from '@ohos/timer';
 
 const CLOCK_SIZE = 373.5;
 

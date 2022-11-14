@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { TimerController } from "@ohos/timer";
+import { TimerController } from '@ohos/timer';
 import { ConfigData } from '@ohos/common';
 import { TimerClock } from './TimerClock';
 import { CurrentTimeDisplay } from './CurrentTimeDisplay';
@@ -39,37 +39,37 @@ export struct Timer {
   build() {
     Column() {
       Row() {
-        Text($r("app.string.stopwatch"))
-          .fontSize($r("app.float.font_48"))
-          .fontColor($r("app.color.text_color"))
-          .lineHeight($r("app.float.wh_value_44"))
+        Text($r('app.string.stopwatch'))
+          .fontSize($r('app.float.font_48'))
+          .fontColor($r('app.color.text_color'))
+          .lineHeight($r('app.float.wh_value_44'))
           .fontWeight(500)
           .textOverflow({ overflow: TextOverflow.Ellipsis })
           .textAlign(TextAlign.Center)
-          .margin({ top: $r("app.float.distance_18_5"), bottom: $r("app.float.distance_12") })
+          .margin({ top: $r('app.float.distance_18_5'), bottom: $r('app.float.distance_12') })
       }
-      .padding({ left: $r("app.float.wh_value_32") })
+      .padding({ left: $r('app.float.wh_value_32') })
       .width(ConfigData.WH_100_100)
 
       List() {
         ListItem() {
           TimerClock({ timerController: this.timerController })
-        }.margin({ bottom: $r("app.float.distance_16"), top: $r("app.float.distance_16") })
+        }.margin({ bottom: $r('app.float.distance_16'), top: $r('app.float.distance_16') })
 
         ListItem() {
           CurrentTimeDisplay({ timerController: this.timerController, lastTimeMs: this.lastTimeMs })
         }
         .sticky(Sticky.Normal)
-        .backgroundColor($r("app.color.background_color"))
-        .shadow({ radius: $r("app.float.wh_value_20"), offsetY: 30, color: $r("app.color.background_color") })
-        .margin({ bottom: $r("app.float.distance_8") })
+        .backgroundColor($r('app.color.background_color'))
+        .shadow({ radius: $r('app.float.wh_value_20'), offsetY: 30, color: $r('app.color.background_color') })
+        .margin({ bottom: $r('app.float.distance_8') })
 
         ListItem() {
           TimeOfRecord({ timeList: this.timeList, lastTimeMs: this.lastTimeMs })
         }
       }
       .width(ConfigData.WH_100_100)
-      .height($r("app.float.wh_value_526"))
+      .height($r('app.float.wh_value_526'))
       .scrollBar(BarState.Off)
       .edgeEffect(EdgeEffect.None)
 

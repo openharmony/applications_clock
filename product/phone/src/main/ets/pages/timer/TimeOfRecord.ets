@@ -30,42 +30,42 @@ export struct TimeOfRecord {
             Row() {
               Row() {
                 Text(TimerUtil.addZero(this.timeList.length - item.i))
-                  .fontSize($r("app.float.font_28"))
-                  .fontColor($r("app.color.text_color"))
+                  .fontSize($r('app.float.font_28'))
+                  .fontColor($r('app.color.text_color'))
                   .fontWeight(500)
-                Text("+" + TimerUtil.timeFormat(item.data - (item.i < this.timeList.length - 1 ? this.timeList[this.timeList.length - item.i - 2] : 0)))
-                  .width($r("app.float.wh_value_150"))
+                Text('+' + TimerUtil.timeFormat(item.data - (item.i < this.timeList.length - 1 ? this.timeList[this.timeList.length - item.i - 2] : 0)))
+                  .width($r('app.float.wh_value_150'))
                   .textAlign(TextAlign.Center)
-                  .fontSize($r("app.float.font_28"))
-                  .fontColor($r("app.color.text_color"))
-                  .opacity($r("app.float.opacity_6"))
+                  .fontSize($r('app.float.font_28'))
+                  .fontColor($r('app.color.text_color'))
+                  .opacity($r('app.float.opacity_6'))
               }
-              .width($r("app.float.wh_value_280"))
+              .width($r('app.float.wh_value_280'))
               .justifyContent(FlexAlign.SpaceBetween)
 
               Text(TimerUtil.timeFormat(item.data))
-                .fontSize($r("app.float.font_28"))
-                .fontColor($r("app.color.text_color"))
+                .fontSize($r('app.float.font_28'))
+                .fontColor($r('app.color.text_color'))
                 .fontWeight(500)
             }.width(ConfigData.WH_100_100)
             .height(ConfigData.WH_100_100)
             .justifyContent(FlexAlign.SpaceBetween)
-            .padding({ left: $r("app.float.distance_16"), right: $r("app.float.distance_16") })
+            .padding({ left: $r('app.float.distance_16'), right: $r('app.float.distance_16') })
           }
-          .height($r("app.float.wh_value_75"))
+          .height($r('app.float.wh_value_75'))
           .width(ConfigData.WH_100_100)
           .clip(true)
         }, item => item.i)
       }
-      .backgroundColor($r("app.color.background_color_white"))
-      .borderRadius($r("app.float.distance_32"))
-      .padding({ top: $r("app.float.distance_6"), bottom: $r("app.float.distance_6") })
+      .backgroundColor($r('app.color.background_color_white'))
+      .borderRadius($r('app.float.distance_32'))
+      .padding({ top: $r('app.float.distance_6'), bottom: $r('app.float.distance_6') })
     }
     .padding({
-      left: $r("app.float.distance_16"),
-      right: $r("app.float.distance_16"),
-      top: $r("app.float.distance_8"),
-      bottom: $r("app.float.distance_8")
+      left: $r('app.float.distance_16'),
+      right: $r('app.float.distance_16'),
+      top: $r('app.float.distance_8'),
+      bottom: $r('app.float.distance_8')
     })
     .visibility(this.timeList.length > 0 ? Visibility.Visible : Visibility.None)
   }

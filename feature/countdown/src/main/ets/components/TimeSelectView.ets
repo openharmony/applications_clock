@@ -19,8 +19,8 @@ const TAG = 'TimeSelectView : ';
 
 @Component
 export struct TimeSelectView {
-  private marginRight: number | Resource = $r("app.float.distance_30");
-  private dividerMargin: number | Resource = $r("app.float.distance_75");
+  private marginRight: number | Resource = $r('app.float.distance_30');
+  private dividerMargin: number | Resource = $r('app.float.distance_75');
   private hourRange: number[] = Array.from(new Array(ConfigData.HOUR_SELECT).keys());
   private minuteRange: number[] = Array.from(new Array(ConfigData.MINUTE_SELECT).keys());
   private secondRange: number[] = Array.from(new Array(ConfigData.SECOND_SELECT).keys());
@@ -36,7 +36,7 @@ export struct TimeSelectView {
         Row() {
           TimeSelectItem({
             fruits: this.convert(this.hourRange),
-            text: $r("app.string.hour"),
+            text: $r('app.string.hour'),
             isVisibility: true,
             marginRight: this.marginRight,
             value: $hour,
@@ -45,7 +45,7 @@ export struct TimeSelectView {
 
           TimeSelectItem({
             fruits: this.convert(this.minuteRange),
-            text: $r("app.string.minute"),
+            text: $r('app.string.minute'),
             isVisibility: true,
             marginRight: this.marginRight,
             value: $minute,
@@ -54,7 +54,7 @@ export struct TimeSelectView {
 
           TimeSelectItem({
             fruits: this.convert(this.secondRange),
-            text: $r("app.string.second"),
+            text: $r('app.string.second'),
             isVisibility: false,
             marginRight: this.marginRight,
             value: $second,
@@ -64,18 +64,18 @@ export struct TimeSelectView {
 
         Divider()
           .strokeWidth(1)
-          .color($r("app.color.divider_color"))
+          .color($r('app.color.divider_color'))
           .margin({
             left: this.dividerMargin,
-            right: this.dividerMargin, top: $r("app.float.distance_35")
+            right: this.dividerMargin, top: $r('app.float.distance_35')
           });
 
         Divider()
           .strokeWidth(1)
-          .color($r("app.color.divider_color"))
+          .color($r('app.color.divider_color'))
           .margin({
             left: this.dividerMargin,
-            right: this.dividerMargin, bottom: $r("app.float.distance_78")
+            right: this.dividerMargin, bottom: $r('app.float.distance_78')
           });
       }
     }
@@ -99,9 +99,9 @@ struct TimeSelectItem {
   private fruits: string[] = [];
   private text: ResourceStr = '';
   private isVisibility: boolean = true;
-  private marginRight: number | Resource = $r("app.float.distance_30");
-  private componentWidth: number | Resource = $r("app.float.wh_value_40");
-  private componentHeight: number | Resource = $r("app.float.wh_value_160");
+  private marginRight: number | Resource = $r('app.float.distance_30');
+  private componentWidth: number | Resource = $r('app.float.wh_value_40');
+  private componentHeight: number | Resource = $r('app.float.wh_value_160');
   private onChangCallBack?: () => void;
   @Link value: string;
 
@@ -109,7 +109,7 @@ struct TimeSelectItem {
     Row() {
       Column() {
         TextPicker({ range: this.fruits, selected: Number(this.value) })
-          .backgroundColor($r("app.color.background_color"))
+          .backgroundColor($r('app.color.background_color'))
           .width(this.componentWidth)
           .height(this.componentHeight)
           .onChange((value: string, index: number) => {
@@ -117,12 +117,12 @@ struct TimeSelectItem {
             this.onChangCallBack();
             LogUtil.info(`${TAG} Picker item changed, value: ${value}, index: ${index} `);
           });
-        Text(this.text).fontSize($r("app.float.font_24")).fontWeight(FontWeight.Regular).height($r("app.float.wh_value_21_5"))
-      }.margin({ right: this.isVisibility ? this.marginRight : $r("app.float.distance_0") });
+        Text(this.text).fontSize($r('app.float.font_24')).fontWeight(FontWeight.Regular).height($r('app.float.wh_value_21_5'))
+      }.margin({ right: this.isVisibility ? this.marginRight : $r('app.float.distance_0') });
 
       Column() {
-        Text(':').fontSize($r("app.float.font_40")).fontWeight(FontWeight.Regular).fontColor($r("app.color.font_color"));
-        Text('').fontSize($r("app.float.font_24")).fontWeight(FontWeight.Regular).height($r("app.float.wh_value_21_5"));
+        Text(':').fontSize($r('app.float.font_40')).fontWeight(FontWeight.Regular).fontColor($r('app.color.font_color'));
+        Text('').fontSize($r('app.float.font_24')).fontWeight(FontWeight.Regular).height($r('app.float.wh_value_21_5'));
       }.margin({ right: this.marginRight })
       .visibility(this.isVisibility ? Visibility.Visible : Visibility.None);
     }

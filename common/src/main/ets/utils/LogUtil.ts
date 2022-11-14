@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-import HiLog from "@ohos.hilog";
+import HiLog from '@ohos.hilog';
 
 const DOMAIN = 0x0500;
-const TAG = "[Clock]";
+const TAG = '[Clock]';
 
 /**
  *  log package tool class

@@ -51,9 +51,9 @@ export struct TimerView {
           .onReady(() => {
             this.drawDials();
           })
-          .backgroundColor($r("app.color.background_color_white"))
+          .backgroundColor($r('app.color.background_color_white'))
           .borderRadius(this.sSize / 2)
-          .shadow({ radius: ConfigData.SHADOW_RADIUS * this.mScale, color: $r("app.color.shadow_color") });
+          .shadow({ radius: ConfigData.SHADOW_RADIUS * this.mScale, color: $r('app.color.shadow_color') });
         Canvas(this.minutesContext)
           .height(this.sSize)
           .aspectRatio(1.0)
@@ -142,9 +142,9 @@ export struct TimerView {
     this.dialsContext.restore();
     this.dialsContext.strokeStyle = ConfigData.TICK_MARK_COLOR;
     // Font style
-    this.dialsContext.font = "normal 500 " + vp2px(ConfigData.SECOND_FONT_SIZE * this.mScale) + 'px';
-    this.dialsContext.textBaseline = "middle";
-    this.dialsContext.textAlign = "center";
+    this.dialsContext.font = 'normal 500 ' + vp2px(ConfigData.SECOND_FONT_SIZE * this.mScale) + 'px';
+    this.dialsContext.textBaseline = 'middle';
+    this.dialsContext.textAlign = 'center';
     // Drawing scale
     for (let n = 0; n < 60; n++) {
       // Gets an Angle of 60 scales
@@ -195,7 +195,7 @@ export struct TimerView {
     this.dialsContext.fill();
     this.dialsContext.restore();
     // Font style
-    this.dialsContext.font = "normal 400 " + vp2px(ConfigData.MINUTE_FONT_SIZE * this.mScale) + 'px';
+    this.dialsContext.font = 'normal 400 ' + vp2px(ConfigData.MINUTE_FONT_SIZE * this.mScale) + 'px';
     // Drawing scale
     for (let n = 0; n < 30; n++) {
       this.dialsContext.strokeStyle = ConfigData.TICK_MARK_COLOR;

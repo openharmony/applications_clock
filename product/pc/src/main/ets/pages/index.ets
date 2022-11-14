@@ -22,19 +22,19 @@ import { CountDown } from './Countdown';
 struct Index {
   featureList: Array<any> = [
     {
-      name: $r("app.string.alarm_clock"),
-      icon: $r("app.media.ic_clock_clock"),
-      selectedIcon: $r("app.media.ic_clock_clock_click")
+      name: $r('app.string.alarm_clock'),
+      icon: $r('app.media.ic_clock_clock'),
+      selectedIcon: $r('app.media.ic_clock_clock_click')
     },
     {
-      name: $r("app.string.stopwatch"),
-      icon: $r("app.media.ic_clock_timer"),
-      selectedIcon: $r("app.media.ic_clock_timer_click")
+      name: $r('app.string.stopwatch'),
+      icon: $r('app.media.ic_clock_timer'),
+      selectedIcon: $r('app.media.ic_clock_timer_click')
     },
     {
-      name: $r("app.string.timer_clock"),
-      icon: $r("app.media.ic_clock_second_chronograph"),
-      selectedIcon: $r("app.media.ic_clock_second_chronograph_click")
+      name: $r('app.string.timer_clock'),
+      icon: $r('app.media.ic_clock_second_chronograph'),
+      selectedIcon: $r('app.media.ic_clock_second_chronograph_click')
     },
   ];
   @State featureIndex: number = 1;
@@ -47,12 +47,12 @@ struct Index {
         }), item => {
           Column() {
             Image(this.featureIndex == item.i ? item.data.selectedIcon : item.data.icon)
-              .width($r("app.float.wh_value_12"))
-              .height($r("app.float.wh_value_12"))
+              .width($r('app.float.wh_value_12'))
+              .height($r('app.float.wh_value_12'))
             Text(item.data.name)
-              .fontColor(this.featureIndex == item.i ? $r("app.color.selected_text_color") : $r("app.color.text_color"))
-              .fontSize($r("app.float.font_10"))
-              .margin({ top: $r("app.float.distance_1") })
+              .fontColor(this.featureIndex == item.i ? $r('app.color.selected_text_color') : $r('app.color.text_color'))
+              .fontSize($r('app.float.font_10'))
+              .margin({ top: $r('app.float.distance_1') })
           }
           .onClick(() => {
             this.featureIndex = item.i;
@@ -60,11 +60,11 @@ struct Index {
         }, item => item.i)
 
       }
-      .backgroundColor($r("app.color.background_color_white"))
-      .padding({ top: $r("app.float.wh_value_118"), bottom: $r("app.float.wh_value_118") })
+      .backgroundColor($r('app.color.background_color_white'))
+      .padding({ top: $r('app.float.wh_value_118'), bottom: $r('app.float.wh_value_118') })
       .height(ConfigData.WH_100_100)
       .justifyContent(FlexAlign.SpaceBetween)
-      .width($r("app.float.wh_value_60"))
+      .width($r('app.float.wh_value_60'))
 
       Row() {
         Column() {
@@ -78,7 +78,7 @@ struct Index {
       .width(ConfigData.WH_100_100)
       .height(ConfigData.WH_100_100)
       .flexShrink(1)
-    }.backgroundColor($r("app.color.background_color"))
+    }.backgroundColor($r('app.color.background_color'))
     .width(ConfigData.WH_100_100)
     .height(ConfigData.WH_100_100)
   }

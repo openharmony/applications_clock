@@ -16,7 +16,8 @@
 import { ConfigData, LogUtil } from '@ohos/common';
 import data_preferences from '@ohos.data.preferences';
 
-const TAG = "TimerController : ";
+const TAG = 'TimerController : ';
+const STORE_NAME = 'myClockStore';
 
 export enum TimerState {
   /**
@@ -46,6 +47,11 @@ export class TimerController {
   private stateUpdateListener: (TimerState) => void = undefined;
   private timeListUpdateListener: (timeList: Array<number>, lastTimeMs: number) => void = undefined;
   private preferences: data_preferences.Preferences = undefined;
+  private startTimestampStr: string = `startTimestamp`;
+  private stateStr: string = `state`;
+  private timeListStr: string = `timeList`;
+  private lastTimeMsStr: string = `lastTimeMs`;
+  private beforePauseTimeStr: string = `beforePauseTime`;
 
   /**
    * Timer start
@@ -63,7 +69,7 @@ export class TimerController {
       this.notifyTimeChanges();
     }, ConfigData.NOTIFY_INTERVAL_MS);
     if (this.preferences) {
-      await this.preferences.put("startTimestamp", this.startTimestamp);
+      await this.preferences.put(this.startTimestampStr, this.startTimestamp);
     }
     this.state = TimerState.RUNNING;
     this.notifyStateChanges();
@@ -81,7 +87,7 @@ export class TimerController {
     this.notifierId = -1;
     this.state = TimerState.PAUSED;
     if (this.preferences) {
-      await this.preferences.put("beforePauseTime", this.beforePauseTime);
+      await this.preferences.put(this.beforePauseTimeStr, this.beforePauseTime);
     }
     this.notifyTimeChanges();
     this.notifyStateChanges();
@@ -110,13 +116,13 @@ export class TimerController {
    */
   public async reload() {
     LogUtil.info(`${TAG} Read the previous data `);
-    this.preferences = await data_preferences.getPreferences(globalThis.abilityContext, 'myClockStore');
-    this.state = <TimerState> await this.preferences.get("state", TimerState.IDLE);
-    this.lastTimeMs = <number> await this.preferences.get("lastTimeMs", 0);
-    this.beforePauseTime = <number> await this.preferences.get("beforePauseTime", 0);
-    this.startTimestamp = <number> await this.preferences.get("startTimestamp", 0);
+    this.preferences = await data_preferences.getPreferences(globalThis.abilityContext, STORE_NAME);
+    this.state = <TimerState> await this.preferences.get(this.stateStr, TimerState.IDLE);
+    this.lastTimeMs = <number> await this.preferences.get(this.lastTimeMsStr, 0);
+    this.beforePauseTime = <number> await this.preferences.get(this.beforePauseTimeStr, 0);
+    this.startTimestamp = <number> await this.preferences.get(this.startTimestampStr, 0);
 
-    let timeList = await this.preferences.get("timeList", 0);
+    let timeList = await this.preferences.get(this.timeListStr, 0);
     if (timeList == 0) {
       this.timeList = [];
     } else {
@@ -178,8 +184,8 @@ export class TimerController {
     }
     if (this.preferences) {
       //@ts-ignore
-      await this.preferences.put("timeList", this.timeList);
-      await this.preferences.put("lastTimeMs", this.lastTimeMs);
+      await this.preferences.put(this.timeListStr, this.timeList);
+      await this.preferences.put(this.lastTimeMsStr, this.lastTimeMs);
       this.flush();
     }
   }
@@ -193,7 +199,7 @@ export class TimerController {
       this.stateUpdateListener(this.state);
     }
     if (this.preferences) {
-      await this.preferences.put("state", this.state);
+      await this.preferences.put(this.stateStr, this.state);
       this.flush();
     }
   }
@@ -204,10 +210,10 @@ export class TimerController {
   private flush() {
     this.preferences.flush(function (err) {
       if (err) {
-        console.warn("Failed flush. Cause: " + err);
+        console.warn('Failed flush. Cause: ' + err);
         return;
       }
-      console.warn("Succeeded flush.");
+      console.warn('Succeeded flush.');
     })
   }
 
