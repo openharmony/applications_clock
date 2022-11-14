@@ -33,7 +33,7 @@ export struct TimeOfRecord {
                   .fontSize($r('app.float.font_28'))
                   .fontColor($r('app.color.text_color'))
                   .fontWeight(500)
-                Text('+' + TimerUtil.timeFormat(item.data - (item.i < this.timeList.length - 1 ? this.timeList[this.timeList.length - item.i - 2] : 0)))
+                Text('+' + TimerUtil.timeFormat(item.data - (item.i < this.timeList.length - 1 ? this.timeList[this.timeList.length - 1 - item.i - 1] : 0)))
                   .width($r('app.float.wh_value_150'))
                   .textAlign(TextAlign.Center)
                   .fontSize($r('app.float.font_28'))
