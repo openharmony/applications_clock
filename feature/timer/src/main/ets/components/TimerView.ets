@@ -49,7 +49,7 @@ export struct TimerView {
           .height(this.sSize)
           .aspectRatio(1.0)
           .onReady(() => {
-            this.drawDials()
+            this.drawDials();
           })
           .backgroundColor($r("app.color.background_color_white"))
           .borderRadius(this.sSize / 2)
@@ -58,13 +58,13 @@ export struct TimerView {
           .height(this.sSize)
           .aspectRatio(1.0)
           .onReady(() => {
-            this.drawMinutes(this.currentTime % (60 * 60 * 1000) / (60 * 1000))
+            this.drawMinutes(this.currentTime % (60 * 60 * 1000) / (60 * 1000));
           });
         Canvas(this.secondContext)
           .height(this.sSize)
           .aspectRatio(1.0)
           .onReady(() => {
-            this.drawSecond(this.currentTime % (60 * 1000) / 1000)
+            this.drawSecond(this.currentTime % (60 * 1000) / 1000);
           });
       }
     }

@@ -13,26 +13,26 @@
  * limitations under the License.
  */
 
-import { TimerController } from "@ohos/timer"
-import { ConfigData } from '@ohos/common'
-import { TimerClock } from './TimerClock'
-import { CurrentTimeDisplay } from './CurrentTimeDisplay'
-import { TimeOfRecord } from './TimeOfRecord'
-import { TimerControl } from './TimerControl'
+import { TimerController } from "@ohos/timer";
+import { ConfigData } from '@ohos/common';
+import { TimerClock } from './TimerClock';
+import { CurrentTimeDisplay } from './CurrentTimeDisplay';
+import { TimeOfRecord } from './TimeOfRecord';
+import { TimerControl } from './TimerControl';
 
 @Component
 export struct Timer {
-  private timerController: TimerController = new TimerController()
-  private timeList: Array<number> = []
-  @State lastTimeMs: number = 0
+  private timerController: TimerController = new TimerController();
+  private timeList: Array<number> = [];
+  @State lastTimeMs: number = 0;
 
   aboutToAppear() {
     this.timerController.setTimeListUpdateListener((timeList: Array<number>, lastTimeMs: number) => {
-      this.timeList = timeList
-      this.lastTimeMs = lastTimeMs
+      this.timeList = timeList;
+      this.lastTimeMs = lastTimeMs;
     })
     setTimeout(() => {
-      this.timerController.reload()
+      this.timerController.reload();
     }, 100)
   }
 

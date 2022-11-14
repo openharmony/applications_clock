@@ -13,12 +13,12 @@
  * limitations under the License.
  */
 
-import { TimerUtil, ConfigData } from '@ohos/common'
+import { TimerUtil, ConfigData } from '@ohos/common';
 
 @Component
 export struct TimeOfRecord {
-  @State timeList: Array<number> = []
-  @Prop lastTimeMs: number
+  @State timeList: Array<number> = [];
+  @Prop lastTimeMs: number;
 
   build() {
     Column() {

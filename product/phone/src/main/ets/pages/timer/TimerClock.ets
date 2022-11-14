@@ -13,18 +13,18 @@
  * limitations under the License.
  */
 
-import { TimerView, TimerController } from "@ohos/timer"
+import { TimerView, TimerController } from "@ohos/timer";
 
-const CLOCK_SIZE = 373.5
+const CLOCK_SIZE = 373.5;
 
 @Component
 export struct TimerClock {
-  @State currentTime: number = 0
-  @State timerController: TimerController = new TimerController()
+  @State currentTime: number = 0;
+  @State timerController: TimerController = new TimerController();
 
   aboutToAppear() {
     this.timerController.setClockUpdateListener((currentTimeMs: number) => {
-      this.currentTime = currentTimeMs
+      this.currentTime = currentTimeMs;
     })
   }
 

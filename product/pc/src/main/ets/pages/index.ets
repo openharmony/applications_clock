@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-import { ConfigData } from '@ohos/common'
-import { Timer } from './timer/Timer'
-import { CountDown } from './Countdown'
+import { ConfigData } from '@ohos/common';
+import { Timer } from './timer/Timer';
+import { CountDown } from './Countdown';
 
 @Entry
 @Component
@@ -36,8 +36,8 @@ struct Index {
       icon: $r("app.media.ic_clock_second_chronograph"),
       selectedIcon: $r("app.media.ic_clock_second_chronograph_click")
     },
-  ]
-  @State featureIndex: number = 1
+  ];
+  @State featureIndex: number = 1;
 
   build() {
     Row() {
@@ -55,7 +55,7 @@ struct Index {
               .margin({ top: $r("app.float.distance_1") })
           }
           .onClick(() => {
-            this.featureIndex = item.i
+            this.featureIndex = item.i;
           })
         }, item => item.i)
 

@@ -13,18 +13,18 @@
  * limitations under the License.
  */
 
-import { TimerController } from "@ohos/timer"
-import { TimerUtil, ConfigData } from '@ohos/common'
+import { TimerController } from "@ohos/timer";
+import { TimerUtil, ConfigData } from '@ohos/common';
 
 @Component
 export struct CurrentTimeDisplay {
-  @State currentTime: number = 0
-  @Prop lastTimeMs: number
-  @State timerController: TimerController = new TimerController()
+  @State currentTime: number = 0;
+  @Prop lastTimeMs: number;
+  @State timerController: TimerController = new TimerController();
 
   aboutToAppear() {
     this.timerController.setTimeUpdateListener((currentTimeMs: number) => {
-      this.currentTime = currentTimeMs
+      this.currentTime = currentTimeMs;
     })
   }
 
