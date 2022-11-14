@@ -15,6 +15,11 @@
 
 import { ConfigData } from '@ohos/common';
 
+const DOUBLE: number = 2;
+const TIME_DECIMAL: number = 60;
+const MS_DECIMAL: number = 1000;
+const FLAG_BIT: number = 5;
+
 @Component
 export struct TimerView {
   @Prop currentTime: number;
@@ -36,10 +41,10 @@ export struct TimerView {
 
   aboutToAppear() {
     this.mScale = this.sSize / ConfigData.STANDARD_SIZE;
-    this.mSize = this.sSize / 4;
+    this.mSize = this.sSize / DOUBLE / DOUBLE;
     // Get the radius
-    this.sRadius = this.sSize / 2 - ConfigData.SECOND_DISTANCE * this.mScale;
-    this.mRadius = this.mSize / 2 - ConfigData.MINUTE_DISTANCE * this.mScale;
+    this.sRadius = this.sSize / DOUBLE - ConfigData.SECOND_DISTANCE * this.mScale;
+    this.mRadius = this.mSize / DOUBLE - ConfigData.MINUTE_DISTANCE * this.mScale;
   }
 
   build() {
@@ -52,19 +57,19 @@ export struct TimerView {
             this.drawDials();
           })
           .backgroundColor($r('app.color.background_color_white'))
-          .borderRadius(this.sSize / 2)
+          .borderRadius(this.sSize / DOUBLE)
           .shadow({ radius: ConfigData.SHADOW_RADIUS * this.mScale, color: $r('app.color.shadow_color') });
         Canvas(this.minutesContext)
           .height(this.sSize)
           .aspectRatio(1.0)
           .onReady(() => {
-            this.drawMinutes(this.currentTime % (60 * 60 * 1000) / (60 * 1000));
+            this.drawMinutes(this.currentTime % (TIME_DECIMAL * TIME_DECIMAL * MS_DECIMAL) / (TIME_DECIMAL * MS_DECIMAL));
           });
         Canvas(this.secondContext)
           .height(this.sSize)
           .aspectRatio(1.0)
           .onReady(() => {
-            this.drawSecond(this.currentTime % (60 * 1000) / 1000);
+            this.drawSecond(this.currentTime % (TIME_DECIMAL * MS_DECIMAL) / MS_DECIMAL);
           });
       }
     }
@@ -82,7 +87,7 @@ export struct TimerView {
     this.secondContext.save();
     this.secondContext.strokeStyle = ConfigData.SECOND_HAND_COLOR;
     // Pointer Angle The second hand is divided into 60 parts
-    let theta = second * 2 * Math.PI / 60;
+    let theta = second * DOUBLE * Math.PI / TIME_DECIMAL;
     this.secondContext.beginPath();
     // A pointer to draw
     let x_move = this.sRadius * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
@@ -106,7 +111,7 @@ export struct TimerView {
     this.minutesContext.lineCap = 'round';
     this.minutesContext.save();
     // Pointer Angle The minute hand is divided into 30 parts
-    let theta = minutes * 2 * Math.PI / 30;
+    let theta = minutes * DOUBLE * Math.PI / (TIME_DECIMAL / DOUBLE);
     this.minutesContext.beginPath();
     // Start position of scale
     let x_move = (this.mRadius - ConfigData.MINUTE_POINTER_DISTANCE * this.mScale) * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
@@ -137,7 +142,7 @@ export struct TimerView {
     this.dialsContext.fillStyle = ConfigData.SECOND_HAND_COLOR;
     this.dialsContext.beginPath();
 
-    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.SECOND_DIALS_CENTER_OFFSET_Y, ConfigData.SECOND_CIRCLE_WIDTH * this.mScale, 0, Math.PI * 2);
+    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.SECOND_DIALS_CENTER_OFFSET_Y, ConfigData.SECOND_CIRCLE_WIDTH * this.mScale, 0, Math.PI * DOUBLE);
     this.dialsContext.fill();
     this.dialsContext.restore();
     this.dialsContext.strokeStyle = ConfigData.TICK_MARK_COLOR;
@@ -146,9 +151,9 @@ export struct TimerView {
     this.dialsContext.textBaseline = 'middle';
     this.dialsContext.textAlign = 'center';
     // Drawing scale
-    for (let n = 0; n < 60; n++) {
+    for (let n = 0; n < TIME_DECIMAL; n++) {
       // Gets an Angle of 60 scales
-      let theta = n * (Math.PI * 2) / 60;
+      let theta = n * (Math.PI * DOUBLE) / TIME_DECIMAL;
       this.dialsContext.save();
       // Setting the scale width
       this.dialsContext.lineWidth = ConfigData.TICK_MARK_WIDTH * this.mScale;
@@ -160,7 +165,7 @@ export struct TimerView {
       let x_to = (this.sRadius - ConfigData.SECOND_TICK_MARK_DISTANCE * this.mScale) * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
       let y_to = -(this.sRadius - ConfigData.SECOND_TICK_MARK_DISTANCE * this.mScale) * Math.cos(theta) + this.sSize * ConfigData.SECOND_DIALS_CENTER_OFFSET_Y;
       // Integral point calibration
-      if (n % 5 == 0) {
+      if (n % FLAG_BIT == 0) {
         // The scale width of the hour
         this.dialsContext.lineWidth = ConfigData.HOUR_TICK_MARK_WIDTH * this.mScale;
         // End position of the mark on the hour
@@ -170,7 +175,7 @@ export struct TimerView {
         let x_time = (this.sRadius - ConfigData.HOUR_SECOND_TIMER_DISTANCE * this.mScale) * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
         let y_time = -(this.sRadius - ConfigData.HOUR_SECOND_TIMER_DISTANCE * this.mScale) * Math.cos(theta) + this.sSize * ConfigData.SECOND_DIALS_CENTER_OFFSET_Y;
         // Plot the hour
-        this.dialsContext.fillText(this.times[n / 5] + '', x_time, y_time);
+        this.dialsContext.fillText(this.times[n / FLAG_BIT] + '', x_time, y_time);
       }
       // Draw the scale
       this.dialsContext.moveTo(x_move, y_move);
@@ -187,19 +192,19 @@ export struct TimerView {
     // Draw the origin
     this.dialsContext.save();
     this.dialsContext.beginPath();
-    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y, ConfigData.MINUTE_CIRCLE_WIDTH * this.mScale, 0, Math.PI * 2);
+    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y, ConfigData.MINUTE_CIRCLE_WIDTH * this.mScale, 0, Math.PI * DOUBLE);
     this.dialsContext.fill();
     this.dialsContext.fillStyle = ConfigData.CIRCLE_WIDTH_COLOR;
     this.dialsContext.beginPath();
-    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y, ConfigData.MINUTE_CENTER_CIRCLE_WIDTH * this.mScale, 0, Math.PI * 2);
+    this.dialsContext.arc(this.sSize * ConfigData.DIALS_CENTER_OFFSET_X, this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y, ConfigData.MINUTE_CENTER_CIRCLE_WIDTH * this.mScale, 0, Math.PI * DOUBLE);
     this.dialsContext.fill();
     this.dialsContext.restore();
     // Font style
     this.dialsContext.font = 'normal 400 ' + vp2px(ConfigData.MINUTE_FONT_SIZE * this.mScale) + 'px';
     // Drawing scale
-    for (let n = 0; n < 30; n++) {
+    for (let n = 0; n < (TIME_DECIMAL / DOUBLE); n++) {
       this.dialsContext.strokeStyle = ConfigData.TICK_MARK_COLOR;
-      let theta = n * (Math.PI * 2) / 30;
+      let theta = n * (Math.PI * DOUBLE) / (TIME_DECIMAL / DOUBLE);
       this.dialsContext.save();
       // Scale width
       this.dialsContext.lineWidth = ConfigData.TICK_MARK_WIDTH * this.mScale;
@@ -211,13 +216,13 @@ export struct TimerView {
       let x_to = (this.mRadius - ConfigData.MINUTE_TICK_MARK_DISTANCE * this.mScale) * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
       let y_to = -(this.mRadius - ConfigData.MINUTE_TICK_MARK_DISTANCE * this.mScale) * Math.cos(theta) + this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y;
       // Integral point calibration
-      if (n % 5 == 0) {
+      if (n % FLAG_BIT == 0) {
         this.dialsContext.strokeStyle = ConfigData.HOUR_TICK_MARK_COLOR;
         // Time position on the hour
         let x_time = (this.mRadius - ConfigData.HOUR_MINUTE_TIMER_DISTANCE * this.mScale) * Math.sin(theta) + this.sSize * ConfigData.DIALS_CENTER_OFFSET_X;
         let y_time = -(this.mRadius - ConfigData.HOUR_MINUTE_TIMER_DISTANCE * this.mScale) * Math.cos(theta) + this.sSize * ConfigData.MINUTE_DIALS_CENTER_OFFSET_Y;
         // Plot the hour
-        this.dialsContext.fillText(this.minTimes[n / 5] + '', x_time, y_time);
+        this.dialsContext.fillText(this.minTimes[n / FLAG_BIT] + '', x_time, y_time);
       }
       // Draw the scale
       this.dialsContext.moveTo(x_move, y_move);
