@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-import { CountdownState } from '../controller/CountdownController'
-import { ConfigData } from '@ohos/common'
+import { CountdownState } from '../controller/CountdownController';
+import { ConfigData } from '@ohos/common';
 
 @Component
 export struct CountdownView {
@@ -108,7 +108,7 @@ export struct CountdownView {
       .border({ radius: this.viewSize })
       .shadow({ radius: $r("app.float.radius_value_26_5"), color: this.shadowColor })
       .onReady(() => {
-        this.draw()
+        this.draw();
       });
   }
 }

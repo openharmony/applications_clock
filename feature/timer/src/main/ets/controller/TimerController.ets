@@ -120,6 +120,7 @@ export class TimerController {
     if (timeList == 0) {
       this.timeList = [];
     } else {
+      //@ts-ignore
       this.timeList = <Array<number>> timeList;
     }
 
@@ -176,6 +177,7 @@ export class TimerController {
       this.timeListUpdateListener(this.timeList, this.lastTimeMs);
     }
     if (this.preferences) {
+      //@ts-ignore
       await this.preferences.put("timeList", this.timeList);
       await this.preferences.put("lastTimeMs", this.lastTimeMs);
       this.flush();

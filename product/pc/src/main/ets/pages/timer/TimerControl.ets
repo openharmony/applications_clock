@@ -13,20 +13,20 @@
  * limitations under the License.
  */
 
-import { TimerController, TimerState } from "@ohos/timer"
-import { ImageComponent, ConfigData } from '@ohos/common'
+import { TimerController, TimerState } from "@ohos/timer";
+import { ImageComponent, ConfigData } from '@ohos/common';
 
-const DEFAULT_ICON_SIZE: number = 12
+const DEFAULT_ICON_SIZE: number = 12;
 
 @Component
 export struct TimerControl {
-  private timerController: TimerController = new TimerController()
-  @State state: TimerState = TimerState.IDLE
-  private timeList: Array<number> = []
+  private timerController: TimerController = new TimerController();
+  @State state: TimerState = TimerState.IDLE;
+  private timeList: Array<number> = [];
 
   aboutToAppear() {
     this.timerController.setStateUpdateListener((state) => {
-      this.state = state
+      this.state = state;
     })
   }
 
@@ -54,11 +54,11 @@ export struct TimerControl {
         })
       }.onClick(() => {
         if (this.state == TimerState.IDLE) {
-          this.timerController.start()
+          this.timerController.start();
         } else if (this.state == TimerState.RUNNING) {
-          this.timerController.pause()
+          this.timerController.pause();
         } else if (this.state == TimerState.PAUSED) {
-          this.timerController.start()
+          this.timerController.start();
         }
       })
 
@@ -72,7 +72,7 @@ export struct TimerControl {
       .opacity(this.state == TimerState.RUNNING ? $r("app.float.opacity_full") : $r("app.float.opacity_4"))
       .enabled(this.state == TimerState.RUNNING)
       .onClick(() => {
-        this.timerController.writeTime()
+        this.timerController.writeTime();
       })
     }
     .height($r("app.float.wh_value_24"))
