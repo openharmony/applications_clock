@@ -219,6 +219,7 @@ export class TimerController {
 
   /**
    * Set listening for state changes
+   *
    * @param listener
    */
   public setStateUpdateListener(listener: (TimerState) => void) {
@@ -228,6 +229,7 @@ export class TimerController {
 
   /**
    * Set time change listening
+   *
    * @param listener
    */
   public setTimeUpdateListener(listener: (currentTimeMs: number) => void) {
@@ -237,6 +239,7 @@ export class TimerController {
 
   /**
    *  Set time clock change listening
+   *
    * @param listener
    */
   public setClockUpdateListener(listener: (currentTimeMs: number) => void) {
@@ -246,6 +249,7 @@ export class TimerController {
 
   /**
    * Set the record time list change listening
+   *
    * @param listener
    */
   public setTimeListUpdateListener(listener: (timeList: Array<number>, lastTimeMs: number) => void) {
