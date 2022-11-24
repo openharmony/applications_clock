@@ -79,6 +79,7 @@ export struct TimerView {
 
   /**
    * Draw a Second hand
+   *
    * @param second
    */
   private drawSecond(second: number): void {
@@ -104,6 +105,7 @@ export struct TimerView {
 
   /**
    * Draw a minute hand
+   *
    * @param minutes
    */
   private drawMinutes(minutes: number): void {
