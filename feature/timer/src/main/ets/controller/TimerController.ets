@@ -63,6 +63,9 @@ export class TimerController {
       clearInterval(this.notifierId);
       this.notifierId = -1;
     }
+    if (this.beforePauseTime > 0) {
+      this.notifyTimeChanges();
+    }
     this.notifierId = setInterval(() => {
       let timestamp = new Date().getTime();
       this.currentTimeMs = this.beforePauseTime + timestamp - this.startTimestamp;
@@ -83,7 +86,6 @@ export class TimerController {
     clearInterval(this.notifierId);
     this.beforePauseTime += new Date().getTime() - this.startTimestamp;
     this.currentTimeMs = this.beforePauseTime;
-    this.notifyTimeChanges();
     this.notifierId = -1;
     this.state = TimerState.PAUSED;
     if (this.preferences) {
@@ -108,7 +110,9 @@ export class TimerController {
     this.notifyTimeChanges();
     this.notifyStateChanges();
     this.notifyTimeListChanges();
-    this.preferences.clear();
+    if (this.preferences) {
+      this.preferences.clear();
+    }
   }
 
   /**
@@ -208,6 +212,9 @@ export class TimerController {
    * Persist preferences
    */
   private flush() {
+    if (!this.preferences) {
+      return;
+    }
     this.preferences.flush(function (err) {
       if (err) {
         console.warn('Failed flush. Cause: ' + err);

@@ -16,7 +16,10 @@
 import { describe, beforeAll, beforeEach, afterEach, afterAll, it, expect } from '@ohos/hypium'
 import { TimerController, TimerState } from '@ohos/timer';
 import { TimerUtil } from '@ohos/common';
+<<<<<<< HEAD
 import { CountdownController, CountdownState } from '@ohos/countdown';
+=======
+>>>>>>> 34e999d (add timer ohosTest)
 
 export default function abilityTest() {
     describe('ActsAbilityTest', function () {
@@ -307,6 +310,7 @@ export default function abilityTest() {
             let num = 1000 * 60 * 60 * 24
             let res = TimerUtil.timeFormat(num)
             expect(res).assertEqual(`01:00:00:00.00`)
+<<<<<<< HEAD
         })
     })
 
@@ -510,6 +514,8 @@ export default function abilityTest() {
                 testState = true;
                 mCountdownController.reset();
             }, 100);
+=======
+>>>>>>> 34e999d (add timer ohosTest)
         })
     })
 }
