@@ -239,7 +239,7 @@ export class CountdownController {
    * Get preferences data.
    */
   public async getPreferences() {
-    if (this.preferences) {
+    if (!this.preferences) {
       this.preferences = await dataStorage.getPreferences(globalThis.abilityContext, this.countdownStr);
     }
   }
