@@ -131,20 +131,20 @@ export struct CountDown {
     this.controller.setStateUpdateListener((state) => {
       this.state = state;
       if (state == CountdownState.STOPPED) {
-        let date = new Date(this.totalTime);
-        this.hour = this.fill(date.getHours());
-        this.minute = this.fill(date.getMinutes());
-        this.second = this.fill(date.getSeconds());
+        this.hour = this.fill(Math.floor(this.totalTime / ConfigData.ONE_HOUR_TIME).toString());
+        this.minute = this.fill(Math.floor(this.totalTime % ConfigData.ONE_HOUR_TIME / ConfigData.ONE_MINUTE_TIME).toString());
+        this.second = this.fill(Math.floor(this.totalTime % ConfigData.ONE_MINUTE_TIME / ConfigData.ONE_SECOND_TIME).toString());
+
         this.controller.reStart();
       }
     })
     this.controller.setTimeUpdateListener((currentTimeMs: number, totalTimeMs: number) => {
       this.currentTime = currentTimeMs;
       this.totalTime = totalTimeMs;
-      let date = new Date(this.currentTime);
-      this.hour = this.fill(date.getHours());
-      this.minute = this.fill(date.getMinutes());
-      this.second = this.fill(date.getSeconds());
+
+      this.hour = this.fill(Math.floor(this.currentTime / ConfigData.ONE_HOUR_TIME).toString());
+      this.minute = this.fill(Math.floor(this.currentTime % ConfigData.ONE_HOUR_TIME / ConfigData.ONE_MINUTE_TIME).toString());
+      this.second = this.fill(Math.floor(this.currentTime % ConfigData.ONE_MINUTE_TIME / ConfigData.ONE_SECOND_TIME).toString());
     })
     this.controller.getData();
   }
