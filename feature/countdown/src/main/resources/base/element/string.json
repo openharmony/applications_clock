@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "hour",
+      "value": "hour"
+    },
+    {
+      "name": "minute",
+      "value": "minute"
+    },
+    {
+      "name": "second",
+      "value": "second"
+    }
+  ]
+}

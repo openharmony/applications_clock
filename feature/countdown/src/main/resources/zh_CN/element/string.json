@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "hour",
+      "value": "时"
+    },
+    {
+      "name": "minute",
+      "value": "分"
+    },
+    {
+      "name": "second",
+      "value": "秒"
+    }
+  ]
+}
