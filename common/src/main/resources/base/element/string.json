@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from npm package"
+    },
+    {
+      "name": "alarm_clock",
+      "value": "Alarm clock"
+    },
+    {
+      "name": "stopwatch",
+      "value": "stopwatch"
+    },
+    {
+      "name": "timer_clock",
+      "value": "hour meter"
+    }
+  ]
+}

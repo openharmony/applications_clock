@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <oatconfig>
+        <filefilterlist>
+            <filefilter
+                desc="Filters for compatibility，license header policies"
+                name="copyrightPolicyFilter">
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="hvigorfile.js"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json5"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json5.ftl"
+                    type="filename"/>
+            </filefilter>
+            <filefilter
+                desc="Filters for resources files policies"
+                name="binaryFileTypePolicyFilter">
+                <filteritem
+                    desc="组件效果图，无需修改"
+                    name="figures/clock.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="安装流程图，无需修改"
+                    name="figures/signature.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="安装流程图，无需修改"
+                    name="figures/buildHap.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="安装流程图，无需修改"
+                    name="figures/install.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="应用内置资源文件，无需修改"
+                    name="product/pc/src/main/resources/base/media/icon.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="应用内置资源文件，无需修改"
+                    name="product/phone/src/main/resources/base/media/icon.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="应用内置资源文件，无需修改"
+                    name="AppScope/resources/base/media/app_icon.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="应用内置资源文件，无需修改"
+                    name="product/pc/src/ohosTest/resources/base/media/icon.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="应用内置资源文件，无需修改"
+                    name="product/phone/src/ohosTest/resources/base/media/icon.png"
+                    type="filepath"/>
+            </filefilter>
+            <filefilter
+                desc="Filters for compatibility，license header policies"
+                name="defaultPolicyFilter">
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="hvigorfile.js"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json5"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json"
+                    type="filename"/>
+                <filteritem
+                    desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
+                    name="*.json5.ftl"
+                    type="filename"/>
+            </filefilter>
+        </filefilterlist>
+        <policylist>
+            <policy
+                desc=""
+                name="projectPolicy">
+                <policyitem
+                    desc="Developed by Hoperun Company"
+                    filefilter="copyrightPolicyFilter"
+                    group="defaultGroup"
+                    name="Copyright (c) 2022 HiHope Open Source Organization."
+                    path=".*"
+                    rule="may"
+                    type="copyright"/>
+            </policy>
+        </policylist>
+    </oatconfig>
+</configuration>
