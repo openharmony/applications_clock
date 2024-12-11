@@ -1,0 +1,88 @@
+{
+  "string": [
+    {
+      "name": "sort_city_title_new",
+      "value": "编辑城市"
+    },
+    {
+      "name": "today",
+      "value": "今天"
+    },
+    {
+      "name": "yesterday",
+      "value": "昨天"
+    },
+    {
+      "name": "tomorrow",
+      "value": "明天"
+    },
+    {
+      "name": "fastGMT",
+      "value": "早 %1$s%2$s"
+    },
+    {
+      "name": "lateGMT",
+      "value": "晚 %1$s%2$s"
+    },
+    {
+      "name": "world_clock",
+      "value": "世界时钟"
+    },
+    {
+      "name": "worldclock_city_exist_Toast",
+      "value": "该城市已存在"
+    },
+    {
+      "name": "world_digital_dst_tv",
+      "value": "夏令时"
+    },
+    {
+      "name": "city_full_Toast",
+      "value": "列表已满，请删除城市后再添加"
+    },
+    {
+      "name": "fa_single_clock_name",
+      "value": "城市时钟"
+    },
+    {
+      "name": "fa_three_clock_name",
+      "value": "世界时钟"
+    },
+    {
+      "name": "fa_select_city_title",
+      "value": "选择城市以显示对应城市的时间"
+    },
+    {
+      "name": "fa_select_city",
+      "value": "城市"
+    },
+    {
+      "name": "fa_alarm_alert",
+      "value": "闹钟提醒"
+    },
+    {
+      "name": "fa_city_pre1",
+      "value": "北京"
+    },
+    {
+      "name": "fa_city_pre2",
+      "value": "巴黎"
+    },
+    {
+      "name": "fa_city_pre3",
+      "value": "伦敦"
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "编辑列表"
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "删除"
+    },
+    {
+      "name": "add_page_title",
+      "value": "添加城市"
+    }
+  ]
+}

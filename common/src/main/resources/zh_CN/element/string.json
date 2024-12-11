@@ -1,6 +1,58 @@
 {
   "string": [
     {
+      "name": "only_ring_once",
+      "value": "自定义"
+    },
+    {
+      "name": "every_day",
+      "value": "每天"
+    },
+    {
+      "name": "very_early_morning",
+      "value": "凌晨"
+    },
+    {
+      "name": "dawn",
+      "value": "清晨"
+    },
+    {
+      "name": "early_morning",
+      "value": "早上"
+    },
+    {
+      "name": "morning",
+      "value": "上午"
+    },
+    {
+      "name": "midday",
+      "value": "中午"
+    },
+    {
+      "name": "afternoon",
+      "value": "下午"
+    },
+    {
+      "name": "evening",
+      "value": "傍晚"
+    },
+    {
+      "name": "night",
+      "value": "晚上"
+    },
+    {
+      "name": "midnight",
+      "value": "半夜"
+    },
+    {
+      "name": "cancel",
+      "value": "取消"
+    },
+    {
+      "name": "ok",
+      "value": "确定"
+    },
+    {
       "name": "alarm_clock",
       "value": "闹钟"
     },
@@ -11,6 +63,26 @@
     {
       "name": "timer_clock",
       "value": "计时器"
+    },
+    {
+      "name": "monday_to_friday",
+      "value": "周一至周五"
+    },
+    {
+      "name": "default_alarm_label",
+      "value": "示例：早上好"
+    },
+    {
+      "name": "default_alarm_label_new",
+      "value": "早上好"
+    },
+    {
+      "name": "text_with_separate",
+      "value": "%1$s，%2$s"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "删除"
     }
   ]
 }

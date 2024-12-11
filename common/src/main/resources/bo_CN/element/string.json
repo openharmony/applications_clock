@@ -1,0 +1,40 @@
+{
+    "string":[
+        {
+            "name":"monday_to_friday",
+            "value":"གཟའ་ཟླ་བ་ནས་གཟའ་པ་སངས་བར།"
+        },
+        {
+            "name":"default_alarm_label_new",
+            "value":"ཞོགས་པ་བདེ་ལེགས།"
+        },
+        {
+            "name":"default_alarm_label",
+            "value":"དཔེ་མཚོན། ཞོགས་པ་བདེ་ལེགས།"
+        },
+        {
+            "name":"cancel",
+            "value":"འདོར་བ།"
+        },
+        {
+            "name":"text_with_separate",
+            "value":"%1$s %2$s"
+        },
+        {
+            "name":"timer_title_new",
+            "value":"དུས་རྩིས་ཆས།"
+        },
+        {
+            "name":"alarm_clock",
+            "value":"ཐིར་ལྡན་ཆུ་ཚོད།"
+        },
+        {
+            "name":"every_day",
+            "value":"ཉིན་རེར།"
+        },
+        {
+            "name":"ok",
+            "value":"གཏན་འཁེལ།"
+        }
+    ]
+}

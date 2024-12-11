@@ -1,5 +1,14 @@
 {
   "src": [
-    "pages/index"
+    "pages/index",
+    "pages/ManageAlarmClock",
+    "pages/EditCities",
+    "pages/BannerAlarm",
+    "pages/FullScreenAlarm",
+    "pages/ForegroundPage",
+    "pages/AddCity",
+    "pages/FaManagerCity",
+    "pages/FullScreenTimer",
+    "pages/AddCityNew"
   ]
 }

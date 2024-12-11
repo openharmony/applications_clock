@@ -1,0 +1,49 @@
+{
+    "plural":[
+        {
+            "name":"delete_alarms_msg",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཐིར་ལྡན་ཆུ་ཚོད་ %d བསུབ་རྒྱུ་ཡིན་ནམ།"
+                }
+            ]
+        },
+        {
+            "name":"times",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཐེངས་ %d"
+                }
+            ]
+        },
+        {
+            "name":"alarm_alert_snooze_button_text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"སྐར་མ་ %d རྗེས་སུ་དྲན་སྐུལ་བྱ།"
+                }
+            ]
+        },
+        {
+            "name":"list_select_title",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d བདམ་ཟིན།"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_hours",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཆུ་ཚོད་ %d ནང་དྲིལ་སྒྲ་གྲགས།"
+                }
+            ]
+        }
+    ]
+}

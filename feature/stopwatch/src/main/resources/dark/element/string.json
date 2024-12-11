@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "stopwatch_title",
+      "value": "Stopwatch"
+    },
+    {
+      "name": "stopwatch",
+      "value": "秒表"
+    },
+    {
+      "name": "tips_title",
+      "value": "列表已满"
+    }
+  ]
+}

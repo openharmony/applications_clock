@@ -1,0 +1,31 @@
+{
+  "plural":[
+    {
+      "name": "minute",
+      "value": [
+        {
+          "quantity":"other",
+          "value":"%d 分钟"
+        }
+      ]
+    },
+    {
+      "name": "hour",
+      "value": [
+        {
+          "quantity":"other",
+          "value":"%d 小时"
+        }
+      ]
+    },
+    {
+      "name": "day",
+      "value": [
+        {
+          "quantity":"other",
+          "value":"%d 天"
+        }
+      ]
+    }
+  ]
+}

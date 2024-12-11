@@ -1,0 +1,224 @@
+{
+  "float": [
+    {
+      "name": "clock_margin_vertical",
+      "value": "16vp"
+    },
+    {
+      "name": "clock_shadow_above_space_32",
+      "value": "32vp"
+    },
+    {
+      "name": "timezone_margin_bottom",
+      "value": "2vp"
+    },
+    {
+      "name": "date_info_margin_bottom",
+      "value": "16vp"
+    },
+    {
+      "name": "alarmCard_24",
+      "value": "24dp"
+    },
+    {
+      "name": "text_20",
+      "value": "20dp"
+    },
+    {
+      "name": "city_margin_bottom",
+      "value": "2vp"
+    },
+    {
+      "name": "text_margin_right",
+      "value": "4vp"
+    },
+    {
+      "name": "appbar_icon_size",
+      "value": "24vp"
+    },
+    {
+      "name": "response_region_size",
+      "value": "48vp"
+    },
+    {
+      "name": "appbar_icon_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "title_font_size",
+      "value": "24vp"
+    },
+    {
+      "name": "card_title_line_height",
+      "value": "22vp"
+    },
+    {
+      "name": "card_content_line_height",
+      "value": "19vp"
+    },
+    {
+      "name": "card_content_text_margin_top_4",
+      "value": "4vp"
+    },
+    {
+      "name": "card_content_text_margin_top_11",
+      "value": "11vp"
+    },
+    {
+      "name": "card_content_text_margin_top_8",
+      "value": "8vp"
+    },
+    {
+      "name": "card_content_text_margin_top_24",
+      "value": "24vp"
+    },
+    {
+      "name": "fa_card_title_font_size",
+      "value": "20fp"
+    },
+    {
+      "name": "fa_card_app_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "fa_card_select_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "fa_card_margin_top",
+      "value": "8vp"
+    },
+    {
+      "name": "fa_card_title_margin_top",
+      "value": "12vp"
+    },
+    {
+      "name": "fa_card_title_margin_left",
+      "value": "30vp"
+    },
+    {
+      "name": "fa_card_left_margin",
+      "value": "8vp"
+    },
+    {
+      "name": "fa_card_right_margin",
+      "value": "8vp"
+    },
+    {
+      "name": "fa_card_height",
+      "value": "50vp"
+    },
+    {
+      "name": "empty_world_list_alarm",
+      "value": "62vp"
+    },
+    {
+      "name": "line_height",
+      "value": "500vp"
+    },
+    {
+      "name": "clock_landscape_height",
+      "value": "25vp"
+    },
+    {
+      "name": "clock_landscape_no_height",
+      "value": "0vp"
+    },
+    {
+      "name": "word_padding_left",
+      "value": "104.5vp"
+    },
+    {
+      "name": "lans_list_item_10",
+      "value": "10vp"
+    },
+    {
+      "name": "word_padding_right",
+      "value": "104.5vp"
+    },
+    {
+      "name": "fold_cross_padding",
+      "value": "115vp"
+    },
+    {
+      "name": "edit_padding_left",
+      "value": "104.5vp"
+    },
+    {
+      "name": "edit_padding_right",
+      "value": "104.5vp"
+    },
+    {
+      "name": "large_btn_width",
+      "value": "56vp"
+    },
+    {
+      "name": "large_btn_height",
+      "value": "56vp"
+    },
+    {
+      "name": "large_btn_wrapper_width",
+      "value": "172vp"
+    },
+    {
+      "name": "large_row_margin_left",
+      "value": "96vp"
+    },
+    {
+      "name": "swipe_image_height_and_width",
+      "value": "20vp"
+    },
+    {
+      "name": "swipe_button_height_and_width",
+      "value": "40vp"
+    },
+    {
+      "name": "swipe_margin_size",
+      "value": "4vp"
+    },
+    {
+      "name": "swipe_padding_size",
+      "value": "20vp"
+    },
+    {
+      "name": "swipe_delete_head_width",
+      "value": "18vp"
+    },
+    {
+      "name": "swipe_delete_body_width",
+      "value": "15vp"
+    },
+    {
+      "name": "flod_worldclock_padding",
+      "value": "24vp"
+    },
+    {
+      "name": "card_list_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "card_content_height_pc",
+      "value": "72vp"
+    },
+    {
+      "name": "world_edit_bottom_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "world_city_list_item_padding",
+      "value": "6vp"
+    },
+    {
+      "name": "nav_destination_height",
+      "value": "560vp"
+    },
+    {
+      "name": "add_city_title_height",
+      "value": "56vp"
+    },
+    {
+      "name": "white_card_padding",
+      "value": "5vp"
+    }
+  ]
+}

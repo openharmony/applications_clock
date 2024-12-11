@@ -1,0 +1,64 @@
+{
+    "string":[
+        {
+            "name":"sort_city_title_new",
+            "value":"شەھەرنى تەھرىرلەش"
+        },
+        {
+            "name":"lateGMT",
+            "value":"%1$s%2$s كېيىن"
+        },
+        {
+            "name":"world_digital_dst_tv",
+            "value":"يازلىق ۋاقىت"
+        },
+        {
+            "name":"fa_select_city",
+            "value":"شەھەر"
+        },
+        {
+            "name":"worldclock_city_exist_Toast",
+            "value":"بۇ شەھەر مەۋجۇت"
+        },
+        {
+            "name":"fa_three_clock_name",
+            "value":"دۇنيا سائىتى"
+        },
+        {
+            "name":"add_page_title",
+            "value":"شەھەر قوشۇش"
+        },
+        {
+            "name":"alarm_tips_title",
+            "value":"تىزىملىك تەھرىرلەش"
+        },
+        {
+            "name":"fa_select_city_title",
+            "value":"ۋاقىت كۆرسىتىدىغان شەھەر تاللاڭ."
+        },
+        {
+            "name":"fa_alarm_alert",
+            "value":"قوڭغۇراق سائەت"
+        },
+        {
+            "name":"fa_city_pre1",
+            "value":"بېيجىڭ"
+        },
+        {
+            "name":"fa_city_pre2",
+            "value":"پارىژ"
+        },
+        {
+            "name":"fa_city_pre3",
+            "value":"لوندون"
+        },
+        {
+            "name":"fastGMT",
+            "value":"سەھەر %1$s%2$s"
+        },
+        {
+            "name":"fa_single_clock_name",
+            "value":"شەھەر سائىتى"
+        }
+    ]
+}
