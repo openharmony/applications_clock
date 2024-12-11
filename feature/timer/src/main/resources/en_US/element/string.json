@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "timer_title_new",
+      "value": "Timer"
+    },
+    {
+      "name": "timer_picker_hours",
+      "value": "hour"
+    },
+    {
+      "name": "timer_picker_minutes",
+      "value": "minute"
+    },
+    {
+      "name": "timer_picker_seconds",
+      "value": "second"
+    },
+    {
+      "name": "timer",
+      "value": "Timer"
+    },
+    {
+      "name": "is_counting_down",
+      "value": "is_counting_down"
+    },
+    {
+      "name": "countdown_pause",
+      "value": "countdown_pause"
+    },
+    {
+      "name": "timer_timeout",
+      "value": "timer_timeout"
+    },
+    {
+      "name": "slide_to_off_timer",
+      "value": "slide_to_off_timer"
+    },
+    {
+      "name": "repeat_button_text",
+      "value": "repeat"
+    },
+    {
+      "name": "time_to",
+      "value": "time_to"
+    },
+    {
+      "name": "close",
+      "value": "Stop"
+    }
+  ]
+}

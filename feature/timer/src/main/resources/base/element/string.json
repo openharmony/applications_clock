@@ -1,8 +1,52 @@
 {
   "string": [
     {
-      "name": "page_show",
-      "value": "page from npm package"
+      "name": "timer_title_new",
+      "value": "Timer"
+    },
+    {
+      "name": "timer_picker_hours",
+      "value": "hour"
+    },
+    {
+      "name": "timer_picker_minutes",
+      "value": "minute"
+    },
+    {
+      "name": "timer_picker_seconds",
+      "value": "second"
+    },
+    {
+      "name": "timer",
+      "value": "计时器"
+    },
+    {
+      "name": "is_counting_down",
+      "value": "正在倒计时"
+    },
+    {
+      "name": "countdown_pause",
+      "value": "倒计时暂停"
+    },
+    {
+      "name": "timer_timeout",
+      "value": "计时器超时"
+    },
+    {
+      "name": "slide_to_off_timer",
+      "value": "滑动关闭计时器"
+    },
+    {
+      "name": "repeat_button_text",
+      "value": "重复"
+    },
+    {
+      "name": "time_to",
+      "value": "时间到"
+    },
+    {
+      "name": "close",
+      "value": "关闭"
     }
   ]
 }

@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "ring_in",
+      "value": "Ring in %1$s"
+    },
+    {
+      "name": "ring_in_new",
+      "value": "Ring in %1$s"
+    },
+    {
+      "name": "ring_in_new_two",
+      "value":"Next alarm: %1$s %2$s"
+    },
+    {
+      "name": "ring_in_new_other",
+      "value": "Next alarm: %1$s %2$s %3$s"
+    },
+    {
+      "name": "ring_in_thirety",
+      "value": "Ring in %1$s"
+    },
+    {
+      "name": "less_than_one_minute",
+      "value": "Ring in less than 1 minute."
+    },
+    {
+      "name": "no_alarms_on",
+      "value": "No alarms on"
+    },
+    {
+      "name": "no_alarms",
+      "value": "no alarms"
+    },
+    {
+      "name":"fa_no_alarms",
+      "value":"No alarms on"
+    },
+    {
+      "name":"ringing_soon",
+      "value":"Ringing soon"
+    },
+    {
+      "name":"fa_ringing",
+      "value":"Ringing"
+    },
+    {
+      "name": "repeat",
+      "value": "Repeat"
+    },
+    {
+      "name": "sound",
+      "value": "Sound"
+    },
+    {
+      "name": "label",
+      "value": "Label"
+    },
+    {
+      "name": "ring_duration",
+      "value": "Ring duration"
+    },
+    {
+      "name": "snooze_duration",
+      "value": "Snooze duration"
+    },
+    {
+      "name": "snooze_duration_time",
+      "value": "Snooze duration (min)"
+    },
+    {
+      "name": "number_of_snoozes",
+      "value": "Number of snoozes"
+    },
+    {
+      "name": "add_alarm",
+      "value": "Add alarm"
+    },
+    {
+      "name": "edit_alarm",
+      "value": "Edit alarm"
+    },
+    {
+      "name": "delete_alarm",
+      "value": "DELETE"
+    },
+    {
+      "name": "list_select_title_none",
+      "value": "None selected"
+    },
+    {
+      "name": "delete",
+      "value": "Delete"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "DELETE"
+    },
+    {
+      "name": "list_select_all",
+      "value": "Select all"
+    },
+    {
+      "name": "list_unselect_all",
+      "value": "Deselect all"
+    },
+    {
+      "name": "delete_alarm_confirm",
+      "value": "Delete this alarm?"
+    },
+    {
+      "name": "delete_all_alarms_confirm",
+      "value": "Delete all alarms?"
+    },
+    {
+      "name": "save_changes_confirm",
+      "value": "Save your changes?"
+    },
+    {
+      "name": "quit",
+      "value": "DISCARD"
+    },
+    {
+      "name": "keep",
+      "value": "SAVE"
+    },
+    {
+      "name": "slide_to_turn_off",
+      "value": "Slide to turn off alarm"
+    },
+    {
+      "name": "alarm_notify_snooze_title",
+      "value": "%s (snoozed)"
+    },
+    {
+      "name": "alarm_notify_snooze_context",
+      "value": "Snoozing until %s"
+    },
+    {
+      "name": "format_notify_text",
+      "value": "%1$s - %2$s"
+    },
+    {
+      "name": "close",
+      "value": "Stop"
+    },
+    {
+      "name": "sleep",
+      "value": "Snooze"
+    },
+    {
+      "name": "alarm_notify_miss_label",
+      "value": "%s (missed)"
+    },
+    {
+      "name": "strlenght_full_Toast",
+      "value": "Maximum length reached."
+    },
+    {
+      "name": "once_alarm",
+      "value": "once"
+    },
+    {
+      "name": "customize",
+      "value": "customize"
+    },
+    {
+      "name": "days_of_wake_type",
+      "value": "wakeing days"
+    },
+    {
+      "name": "show_toast_name",
+      "value": "Network service is unavailable"
+    },
+    {
+      "name": "ring_within_one_hours",
+      "value": "<%d hour remaining"
+    },
+    {
+      "name": "ring_within_other_hours",
+      "value": "<%d hours remaining"
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "Edit list"
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "Clear"
+    }
+  ]
+}

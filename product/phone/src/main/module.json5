@@ -2,26 +2,27 @@
   "module": {
     "name": "phone",
     "type": "entry",
-    "srcEntrance": "./ets/Application/MyAbilityStage.ts",
+    // "srcEntry": "./ets/Application/AbilityStage.ets",
     "description": "$string:phone_desc",
-    "mainElement": "MainAbility",
+    "mainElement": "com.example.ohosclock.phone",
     "deviceTypes": [
-      "default"
+      "default",
+      "tablet",
+      "2in1"
     ],
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
-    "uiSyntax": "ets",
     "abilities": [
       {
-        "name": "MainAbility",
-        "srcEntrance": "./ets/MainAbility/MainAbility.ts",
+        "name": "com.example.ohosclock.phone",
+        "srcEntry": "./ets/MainAbility/MainAbility.ets",
         "description": "$string:MainAbility_desc",
-        "icon": "$media:icon",
-        "label": "$string:MainAbility_label",
-        "startWindowIcon": "$media:icon",
-        "startWindowBackground": "$color:white",
-        "visible": true,
+        "icon": "$media:logo",
+        "label": "$string:app_name",
+        "startWindowIcon": "$media:starting_window",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
         "skills": [
           {
             "entities": [
@@ -32,7 +33,149 @@
             ]
           }
         ]
-      }
+      },
+      //      {
+      //        "name": "com.huawei.hmos.clock.ForegroundAbility",
+      //        "srcEntry": "./ets/ForegroundAbility/ForegroundAbility.ets",
+      //        "description": "$string:MainAbility_desc",
+      //        "icon": "$media:app_icon",
+      //        "label": "$string:app_name",
+      //        "startWindowIcon": "$media:starting_window",
+      //        "startWindowBackground": "$color:start_window_background",
+      //        "visible": false,
+      //        "removeMissionAfterTerminate": true,
+      //        "excludeFromMissions": true
+      //      },
+      //      {
+      //        "name": "com.huawei.hmos.clock.FullScreenAbility",
+      //        "srcEntry": "./ets/FullScreenAbility/FullScreenAbility.ets",
+      //        "description": "$string:MainAbility_desc",
+      //        "icon": "$media:app_icon",
+      //        "label": "$string:app_name",
+      //        "startWindowIcon": "$media:starting_window",
+      //        "startWindowBackground": "$color:transparent",
+      //        "removeMissionAfterTerminate": true,
+      //        "excludeFromMissions": true,
+      //        "supportWindowMode": [
+      //          "fullscreen"
+      //        ]
+      //      },
+      //      {
+      //        "name": "EntryAbility",
+      //        "srcEntry": "./ets/IntentAbility/EntryAbility.ets",
+      //        "description": "$string:dawn",
+      //        "icon": "$media:icon",
+      //        "label": "$string:dawn",
+      //        "startWindowIcon": "$media:icon",
+      //        "startWindowBackground": "$color:start_window_background",
+      //        "removeMissionAfterTerminate": true,
+      //        "visible": false,
+      //      }
+      //    ],
+      //    "extensionAbilities": [
+      //      {
+      //        "description": "$string:ServiceExtAbility",
+      //        "icon": "$media:icon",
+      //        "name": "BackupExtensionAbility",
+      //        "srcEntry": "./ets/BackupExtension/BackupExtension.ets",
+      //        "type": "backup",
+      //        "visible": true,
+      //        "metadata": [
+      //          {
+      //            "name": "ohos.extension.backup",
+      //            "resource": "$profile:backup_config"
+      //          },
+      //        ]
+      //      },
+      //      {
+      //        "name": "com.huawei.hmos.clock.AlarmService",
+      //        "visible": false,
+      //        "icon": "$media:app_icon",
+      //        "description": "$string:MainAbility_desc",
+      //        "label": "$string:app_name",
+      //        "srcEntry": "./ets/ServiceExtAbility/AlarmService.ets",
+      //        "type": "service",
+      //        "skills": [
+      //          {
+      //            "entities": [
+      //              "entity.system.home"
+      //            ],
+      //            "actions": [
+      //              "action.system.home"
+      //            ]
+      //          }
+      //        ]
+      //      },
+      //      {
+      //        "name": "com.huawei.hmos.clock.TimerService",
+      //        "visible": false,
+      //        "icon": "$media:app_icon",
+      //        "description": "$string:MainAbility_desc",
+      //        "label": "$string:app_name",
+      //        "srcEntry": "./ets/ServiceExtAbility/TimerService.ets",
+      //        "type": "service",
+      //        "skills": [
+      //          {
+      //            "entities": [
+      //              "entity.system.home"
+      //            ],
+      //            "actions": [
+      //              "action.system.home"
+      //            ]
+      //          }
+      //        ]
+      //      },
+      //      {
+      //        "metadata": [
+      //          {
+      //            "name": "ohos.extension.staticSubscriber",
+      //            "resource": "$profile:static_subscriber_config"
+      //          }
+      //        ],
+      //        "name": "com.huawei.hmos.clock.AlarmInitSubscriber",
+      //        "srcEntry": "./ets/subscriber/AlarmInitSubscriber.ets",
+      //        "type": "staticSubscriber",
+      //        "visible": false
+      //      },
+      //      {
+      //        "name": "EntryFormAbility",
+      //        "srcEntry": "./ets/entryformability/EntryFormAbility.ets",
+      //        "label": "$string:EntryFormAbility_label",
+      //        "description": "$string:EntryFormAbility_desc",
+      //        "type": "form",
+      //        "metadata": [
+      //          {
+      //            "name": "ohos.extension.form",
+      //            "resource": "$profile:form_config"
+      //          }
+      //        ]
+      //      }
+    ],
+    "requestPermissions": [
+      //      {
+      //        "name": "ohos.permission.RUNNING_LOCK"
+      //      },
+      //      {
+      //        "name": "ohos.permission.MANAGE_SECURE_SETTINGS"
+      //      },
+      //      {
+      //        "name": "ohos.permission.INTERNET",
+      //      },
+      //      {
+      //        "name": "ohos.permission.GET_NETWORK_INFO",
+      //      },
+      //      {
+      //        "name": "ohos.permission.VIBRATE"
+      //      },
+      //      {
+      //        "name": "ohos.permission.SET_UNREMOVABLE_NOTIFICATION"
+      //      },
+      //      {
+      //        "name": "ohos.permission.GET_WALLPAPER"
+      //      },
+      //      {
+      //        "name": "ohos.permission.START_ABILITIES_FROM_BACKGROUND"
+      //      }
     ]
   }
 }

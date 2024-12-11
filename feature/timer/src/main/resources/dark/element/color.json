@@ -1,0 +1,41 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#000000"
+    },
+    {
+      "name": "text_picker_color",
+      "value": "#FFFFFF"
+    },
+
+    {
+      "name": "selected_picker_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "timer_bottom_back",
+      "value": "#202224"
+    },
+    {
+      "name": "play_btn",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "timer_stroke",
+      "value": "#33FFFFFF"
+    },
+    {
+      "name": "timer_picker_bg",
+      "value": "#000000"
+    },
+    {
+      "name": "timer_PC_input_default_color",
+      "value": "#000000"
+    },
+    {
+      "name": "timer_PC_input_focus",
+      "value": "#000000"
+    }
+  ]
+}

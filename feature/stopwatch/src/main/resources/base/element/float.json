@@ -1,0 +1,360 @@
+{
+  "float": [
+    {
+      "name": "stopwatch_time_title_margin_bottom",
+      "value": "8vp"
+    },
+    {
+      "name": "stopwatch_time_title_margin_change_bottom",
+      "value": "2vp"
+    },
+    {
+      "name": "dial_margin_24",
+      "value": "24vp"
+    },
+    {
+      "name": "dial_margin_46",
+      "value": "46vp"
+    },
+    {
+      "name": "passed_margin_44",
+      "value": "44vp"
+    },
+    {
+      "name": "passed_margin_23",
+      "value": "23vp"
+    },
+    {
+      "name": "passed_margin_48",
+      "value": "48vp"
+    },
+    {
+      "name": "dial_margin_29",
+      "value": "29vp"
+    },
+    {
+      "name": "dial_margin_19",
+      "value": "19vp"
+    },
+    {
+      "name": "dial_margin_32",
+      "value": "32vp"
+    },
+    {
+      "name": "dial_margin_50",
+      "value": "50vp"
+    },
+    {
+      "name": "stopwatch_time_title_change_text_size",
+      "value": "20sp"
+    },
+    {
+      "name": "stopwatch_time_title_line_change_height",
+      "value": "26vp"
+    },
+    {
+      "name": "stopwatch_time_subtitle_text_size",
+      "value": "14sp"
+    },
+    {
+      "name": "stopwatch_time_subtitle_line_height",
+      "value": "16vp"
+    },
+    {
+      "name": "stopwatch_lap_item_height",
+      "value": "56vp"
+    },
+    {
+      "name": "stopwatch_lap_item_height_no_padding",
+      "value": "64vp"
+    },
+    {
+      "name": "stopwatch_laps_list_margin_top",
+      "value": "24vp"
+    },
+    {
+      "name": "stopwatch_laps_list_fold_top",
+      "value": "32vp"
+    },
+    {
+      "name": "stopwatch_bottom_buttons_bar_padding_horizontal",
+      "value": "16vp"
+    },
+    {
+      "name": "stopwatch_bottom_buttons_bar_height",
+      "value": "116vp"
+    },
+    {
+      "name": "clock_margin_vertical",
+      "value": "16vp"
+    },
+    {
+      "name": "stopwatch_bottom_borderRadius",
+      "value": "36vp"
+    },
+    {
+      "name": "stopwatch_bottom_padding",
+      "value": "6vp"
+    },
+    {
+      "name": "stopwatch_bottom_padding_height",
+      "value": "60vp"
+    },
+    {
+      "name": "stopwatch_bottom_width",
+      "value": "250vp"
+    },
+    {
+      "name": "stopwatch_bottom_margin_bottom",
+      "value": "24vp"
+    },
+    {
+      "name": "clock_shadow_above_space",
+      "value": "35vp"
+    },
+    {
+      "name": "stopwatch_time_subtitle_height",
+      "value": "19vp"
+    },
+    {
+      "name": "stopwatch_time_height",
+      "value": "56vp"
+    },
+    {
+      "name": "stopwatch_time_change_height",
+      "value": "26vp"
+    },
+    {
+      "name": "translate_iHeight_cross",
+      "value": "224vp"
+    },
+    {
+      "name": "translate_iHeight_vertical",
+      "value": "500vp"
+    },
+    {
+      "name": "cross_margin_left",
+      "value": "-85vp"
+    },
+    {
+      "name": "vertical_margin_left",
+      "value": "-85vp"
+    },
+    {
+      "name": "isPortraitOrientation_width",
+      "value": "458vp"
+    },
+    {
+      "name": "stopwatch_time_title_margin_top",
+      "value": "-1vp"
+    },
+    {
+      "name": "text_width",
+      "value": "32vp"
+    },
+    {
+      "name": "text_height",
+      "value": "32vp"
+    },
+    {
+      "name": "padding_top",
+      "value": "16vp"
+    },
+    {
+      "name": "padding_bottom",
+      "value": "16vp"
+    },
+    {
+      "name": "margin_left_1",
+      "value": "-1vp"
+    },
+    {
+      "name": "line_height",
+      "value": "500vp"
+    },
+    {
+      "name": "ban_padding",
+      "value": "48vp"
+    },
+    {
+      "name": "ban_padding_20",
+      "value": "20vp"
+    },
+    {
+      "name": "ban_padding_17",
+      "value": "17vp"
+    },
+    {
+      "name": "ban_padding_19",
+      "value": "19vp"
+    },
+    {
+      "name": "cross_bottom",
+      "value": "12vp"
+    },
+    {
+      "name": "time_title_bottom",
+      "value": "28vp"
+    },
+    {
+      "name": "vertical_bottom",
+      "value": "28vp"
+    },
+    {
+      "name": "special_bottom",
+      "value": "88vp"
+    },
+    {
+      "name": "line_transtion",
+      "value": "-1vp"
+    },
+    {
+      "name": "cross_over",
+      "value": "94vp"
+    },
+    {
+      "name": "timer_hint_row_height",
+      "value": "10vp"
+    },
+    {
+      "name": "timer_hint_row_change_height",
+      "value": "0vp"
+    },
+    {
+      "name": "stopwatch_time_title_line_height",
+      "value": "47vp"
+    },
+    {
+      "name": "stopwatch_time_title_cricle_line_height",
+      "value": "35vp"
+    },
+    {
+      "name": "timer_picker_date_circle_text_size",
+      "value": "18vp"
+    },
+    {
+      "name": "clock_shadow_space",
+      "value": "32vp"
+    },
+    {
+      "name": "time_list_padding",
+      "value": "16vp"
+    },
+    {
+      "name": "time_list_padding_fold",
+      "value": "24vp"
+    },
+    {
+      "name": "time_title_margin_dail_bottom",
+      "value": "34vp"
+    },
+    {
+      "name": "time_title_margin_right",
+      "value": "48vp"
+    },
+    {
+      "name": "tab_bar_margin_right",
+      "value": "-10vp"
+    },
+    {
+      "name": "normal_margin",
+      "value": "15vp"
+    },
+    {
+      "name": "normal_tablet_margin",
+      "value": "65vp"
+    },
+    {
+      "name": "lg_margin",
+      "value": "86vp"
+    },
+    {
+      "name": "stopwatch_time_title_text_size",
+      "value": "42sp"
+    },
+    {
+      "name": "stopwatch_time_title_text_width",
+      "value": "48vp"
+    },
+    {
+      "name": "stopwatch_time_button_width",
+      "value": "40vp"
+    },
+    {
+      "name": "stopwatch_time_button_height",
+      "value": "40vp"
+    },
+    {
+      "name": "fold_left",
+      "value": "104.5vp"
+    },
+    {
+      "name": "fold_right",
+      "value": "104.5vp"
+    },
+    {
+      "name": "fold_margin_bottom",
+      "value": "97vp"
+    },
+    {
+      "name": "fold_margin_bottom_second",
+      "value": "98vp"
+    },
+    {
+      "name": "stopwatch_time_title_text_size_PC",
+      "value": "56vp"
+    },
+    {
+      "name": "stopwatch_PC_button_margin",
+      "value": "56vp"
+    },
+    {
+      "name": "stopwatch_PC_main_margin",
+      "value": "268vp"
+    },
+    {
+      "name": "stopwatch_PC_text_line_height",
+      "value": "74vp"
+    },
+    {
+      "name": "stopwatch_PC_text_size",
+      "value": "56sp"
+    },
+    {
+      "name": "stopwatch_PC_text_height",
+      "value": "74vp"
+    },
+    {
+      "name": "stopwatch_time_img_width",
+      "value": "65vp"
+    },
+    {
+      "name": "stopwatch_time_img_height",
+      "value": "65vp"
+    },
+    {
+      "name": "fold_cross_padding",
+      "value": "115vp"
+    },
+    {
+      "name": "stopwatch_pc_left",
+      "value": "96vp"
+    },
+    {
+      "name": "stopwatch_pc_left_max",
+      "value": "116vp"
+    },
+    {
+      "name": "stopwatch_pc_bottom",
+      "value": "4vp"
+    },
+    {
+      "name": "rect_pad_margin_left",
+      "value": "-1px"
+    },
+    {
+      "name": "reset_stopwatch_list_item_translate_y",
+      "value": "-95vp"
+    }
+  ]
+}

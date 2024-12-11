@@ -1,0 +1,15 @@
+{
+  "commonEvents": [
+    {
+      "name": "com.example.ohosclock.AlarmInitSubscriber",
+      "permission": "",
+      "types": [],
+      "events": [
+        "usual.event.TIME_CHANGED",
+        "usual.event.TIMEZONE_CHANGED",
+        "usual.event.BOOT_COMPLETED",
+        "usual.event.LOCKED_BOOT_COMPLETED"
+      ]
+    }
+  ]
+}

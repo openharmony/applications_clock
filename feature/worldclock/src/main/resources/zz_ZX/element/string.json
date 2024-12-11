@@ -1,0 +1,88 @@
+{
+  "string": [
+    {
+      "name": "world_clock",
+      "value": "[TS_794210]_World clock"
+    },
+    {
+      "name": "today",
+      "value": "[TS_812906]_Today"
+    },
+    {
+      "name": "tomorrow",
+      "value": "[TS_812903]_Tomorrow"
+    },
+    {
+      "name": "yesterday",
+      "value": "[TS_812904]_Yesterday"
+    },
+    {
+      "name": "worldclock_city_exist_Toast",
+      "value": "[TS_812905]_You've already added this city."
+    },
+    {
+      "name": "world_digital_dst_tv",
+      "value": "[TS_812909]_DST"
+    },
+    {
+      "name": "fastGMT",
+      "value": "[TS_812910]_%1$s%2$s ahead"
+    },
+    {
+      "name": "lateGMT",
+      "value": "[TS_812907]_%1$s%2$s behind"
+    },
+    {
+      "name": "sort_city_title_new",
+      "value": "[TS_812908]_Edit cities"
+    },
+    {
+      "name": "city_full_Toast",
+      "value": "[TS_813906]_City list full. Delete a city before adding a new one."
+    },
+    {
+      "name": "fa_three_clock_name",
+      "value": "[TS_843082]_World clock"
+    },
+    {
+      "name": "fa_alarm_alert",
+      "value": "[TS_843080]_Alarm clock"
+    },
+    {
+      "name": "fa_city_pre1",
+      "value": "[TS_843074]_Beijing"
+    },
+    {
+      "name": "fa_city_pre2",
+      "value": "[TS_843087]_Paris"
+    },
+    {
+      "name": "fa_city_pre3",
+      "value": "[TS_843081]_London"
+    },
+    {
+      "name": "fa_single_clock_name",
+      "value": "[TS_843072]_City clock"
+    },
+    {
+      "name": "fa_select_city",
+      "value": "[TS_846748]_City"
+    },
+    {
+      "name": "add_page_title",
+      "value": "[TS_881030]_Add city"
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "[TS_878045]_编辑列表"
+    },
+    {
+      "name": "fa_select_city_title",
+      "value": "[TS_846747]_Select where you want to see the local time for."
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "[TS_878046]_Delete"
+    }
+  ]
+}

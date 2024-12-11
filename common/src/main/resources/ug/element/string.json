@@ -1,0 +1,40 @@
+{
+    "string":[
+        {
+            "name":"monday_to_friday",
+            "value":"دۈشەنبىدىن جۈمەگىچە"
+        },
+        {
+            "name":"default_alarm_label_new",
+            "value":"خەيرىلىك سەھەر"
+        },
+        {
+            "name":"default_alarm_label",
+            "value":"ئۆرنەك: تىنچلىقمۇ؟"
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش"
+        },
+        {
+            "name":"text_with_separate",
+            "value":"%1$s، %2$s"
+        },
+        {
+            "name":"timer_title_new",
+            "value":"تەتۈر ساناق"
+        },
+        {
+            "name":"alarm_clock",
+            "value":"قوڭغۇراق سائەت"
+        },
+        {
+            "name":"every_day",
+            "value":"كۈندە"
+        },
+        {
+            "name":"ok",
+            "value":"جەزملەش"
+        }
+    ]
+}

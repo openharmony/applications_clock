@@ -1,20 +1,48 @@
 {
-  "string": [
+  "string":[
     {
-      "name": "page_show",
-      "value": "page from npm package"
+      "name":"only_ring_once",
+      "value": "Custom"
     },
     {
-      "name": "alarm_clock",
-      "value": "Alarm clock"
+      "name":"every_day",
+      "value":"Every day"
     },
     {
-      "name": "stopwatch",
-      "value": "stopwatch"
+      "name":"cancel",
+      "value":"Cancel"
     },
     {
-      "name": "timer_clock",
-      "value": "hour meter"
+      "name":"ok",
+      "value":"OK"
+    },
+    {
+      "name":"alarm_clock",
+      "value":"Alarm clock"
+    },
+    {
+      "name":"monday_to_friday",
+      "value":"Monday to Friday"
+    },
+    {
+      "name":"default_alarm_label",
+      "value":"Good morning"
+    },
+    {
+      "name":"default_alarm_label_new",
+      "value":"Good morning"
+    },
+    {
+      "name":"text_with_separate",
+      "value":"%1$s, %2$s"
+    },
+    {
+      "name": "timer_title_new",
+      "value": "Timer"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "Delete"
     }
   ]
 }

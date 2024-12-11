@@ -1,0 +1,136 @@
+{
+    "string":[
+        {
+            "name":"repeat",
+            "value":"قايتىلاش"
+        },
+        {
+            "name":"fa_no_alarms",
+            "value":"قوڭغۇراق سائەت ئېتىك"
+        },
+        {
+            "name":"ringing_soon",
+            "value":"سايرىماقچى"
+        },
+        {
+            "name":"snooze_duration",
+            "value":"قايتا سايراش ئارىلىقى"
+        },
+        {
+            "name":"slide_to_turn_off",
+            "value":"قوڭغۇراقنى سىيرىپ ئېتىش"
+        },
+        {
+            "name":"edit_alarm",
+            "value":"قوڭغۇراق تەھرىرلەش"
+        },
+        {
+            "name":"alarm_notify_miss_label",
+            "value":"%s(ئۆتكۈزۈۋېتىش)"
+        },
+        {
+            "name":"no_alarms",
+            "value":"قوڭغۇراق سائەت يوق"
+        },
+        {
+            "name":"delete",
+            "value":"ئۆچۈرۈش"
+        },
+        {
+            "name":"add_alarm",
+            "value":"قوڭغۇراق سائەت قۇرۇش"
+        },
+        {
+            "name":"list_unselect_all",
+            "value":"ھەممىنى تاللاشنى بىكار قىلىش"
+        },
+        {
+            "name":"delete_all_alarms_confirm",
+            "value":"بارلىق قوڭغۇراقنى ئۆچۈرەمسىز؟"
+        },
+        {
+            "name":"ring_in",
+            "value":"%1$s كېيىن سايرايدۇ"
+        },
+        {
+            "name":"list_select_title_none",
+            "value":"تاللانمىدى"
+        },
+        {
+            "name":"save_changes_confirm",
+            "value":"ئۆزگەرتىشنى ساقلامسىز؟"
+        },
+        {
+            "name":"delete_alarm_confirm",
+            "value":"بۇ قوڭغۇراقنى ئۆچۈرەمدۇق؟"
+        },
+        {
+            "name":"number_of_snoozes",
+            "value":"قايتا سايراش قېتىمى"
+        },
+        {
+            "name":"format_notify_text",
+            "value":"%1$s (%2$s)"
+        },
+        {
+            "name":"no_alarms_on",
+            "value":"بارلىق قوڭغۇراق سائەت ئېتىك"
+        },
+        {
+            "name":"fa_ringing",
+            "value":"سايراۋاتىدۇ"
+        },
+        {
+            "name":"ring_duration",
+            "value":"سايراش ۋاقتى"
+        },
+        {
+            "name":"alarm_tips_title",
+            "value":"تىزىملىك تەھرىرلەش"
+        },
+        {
+            "name":"list_select_all",
+            "value":"ﮬﻪﻣﻤﯩﻨﻰ ﺗﺎﻟﻼش"
+        },
+        {
+            "name":"quit",
+            "value":"تاشلاش"
+        },
+        {
+            "name":"sleep",
+            "value":"سەل تۇرۇپ ئەسكەرتىڭ"
+        },
+        {
+            "name":"keep",
+            "value":"ساقلاش"
+        },
+        {
+            "name":"alarm_notify_snooze_title",
+            "value":"%s (كېچىكتۈرۈلدى)"
+        },
+        {
+            "name":"alarm_notify_snooze_context",
+            "value":"%s دە قايتا سايرايدۇ"
+        },
+        {
+            "name":"strlenght_full_Toast",
+            "value":"كىرگۈزگەن خەت سانى يۇقىرى چەككە يەتتى"
+        },
+        {
+            "name":"label",
+            "value":"قوڭغۇراق سائەت نامى"
+        },
+        {
+            "name":"sound",
+            "value":"قوڭغۇراق سائەت"
+        },
+        {
+            "name":"close",
+            "value":"ئېتىش"
+        },
+        {
+            "name":"delete_alarm",
+            "value":"ئۆچۈرۈش"
+        }
+    ]
+}

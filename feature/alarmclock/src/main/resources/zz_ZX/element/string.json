@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "no_alarms",
+      "value": "[TS_794218]_No alarms"
+    },
+    {
+      "name": "ring_in",
+      "value": "[TS_794245]_Ring in %1$s"
+    },
+    {
+      "name": "ring_in_new",
+      "value": "[TS_872839]_Next alarm: %1$s"
+    },
+    {
+      "name": "ring_in_new_two",
+      "value": "[TS_881710]_Next alarm: %1$s %2$s"
+    },
+    {
+      "name": "ring_in_new_other",
+      "value": "[TS_881709]_Next alarm: %1$s %2$s %3$s"
+    },
+    {
+      "name": "ring_in_thirety",
+      "value": "[TS_870996]_Ring in %1$s"
+    },
+    {
+      "name": "format_notify_text",
+      "value": "[TS_810230]_%1$s - %2$s"
+    },
+    {
+      "name": "quit",
+      "value": "[TS_810219]_Discard"
+    },
+    {
+      "name": "keep",
+      "value": "[TS_810228]_Save"
+    },
+    {
+      "name": "slide_to_turn_off",
+      "value": "[TS_810218]_Slide to turn off alarm"
+    },
+    {
+      "name": "alarm_notify_miss_label",
+      "value": "[TS_810217]_%s (missed)"
+    },
+    {
+      "name": "list_unselect_all",
+      "value": "[TS_794213]_Deselect all"
+    },
+    {
+      "name": "delete_all_alarms_confirm",
+      "value": "[TS_794221]_Delete all alarms?"
+    },
+    {
+      "name": "list_select_title_none",
+      "value": "[TS_794223]_None selected"
+    },
+    {
+      "name": "save_changes_confirm",
+      "value": "[TS_810233]_Save your changes?"
+    },
+    {
+      "name": "delete_alarm_confirm",
+      "value": "[TS_794222]_Delete this alarm?"
+    },
+    {
+      "name": "number_of_snoozes",
+      "value": "[TS_794262]_Number of snoozes"
+    },
+    {
+      "name": "no_alarms_on",
+      "value": "[TS_794261]_No alarms on"
+    },
+    {
+      "name": "ring_duration",
+      "value": "[TS_794242]_Ring duration"
+    },
+    {
+      "name": "list_select_all",
+      "value": "[TS_794248]_Select all"
+    },
+    {
+      "name": "sleep",
+      "value": "[TS_810241]_Snooze"
+    },
+    {
+      "name": "alarm_notify_snooze_title",
+      "value": "[TS_810242]_%s (snoozed)"
+    },
+    {
+      "name": "alarm_notify_snooze_context",
+      "value": "[TS_810234]_Snoozing until %s"
+    },
+    {
+      "name": "label",
+      "value": "[TS_794225]_Label"
+    },
+    {
+      "name": "sound",
+      "value": "[TS_794241]_Sound"
+    },
+    {
+      "name": "close",
+      "value": "[TS_810222]_Stop"
+    },
+    {
+      "name": "repeat",
+      "value": "[TS_794227]_Repeat"
+    },
+    {
+      "name": "snooze_duration",
+      "value": "[TS_794265]_Snooze duration"
+    },
+    {
+      "name": "edit_alarm",
+      "value": "[TS_794224]_Edit alarm"
+    },
+    {
+      "name": "delete",
+      "value": "[TS_794239]_Delete"
+    },
+    {
+      "name": "add_alarm",
+      "value": "[TS_794229]_Add alarm"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "[TS_794251]_Delete"
+    },
+    {
+      "name": "delete_alarm",
+      "value": "[TS_794233]_Delete"
+    },
+    {
+      "name": "fa_no_alarms",
+      "value": "[TS_843073]_No alarms on"
+    },
+    {
+      "name": "ringing_soon",
+      "value": "[TS_843078]_Ringing soon"
+    },
+    {
+      "name": "alarmReminder_desc",
+      "value": "[TS_810223]_description"
+    },
+    {
+      "name": "less_than_one_minute",
+      "value": "[TS_794230]_Next alarm: Less than %s min"
+    },
+    {
+      "name": "fa_ringing",
+      "value": "[TS_843085]_Ringing"
+    },
+    {
+      "name": "strlenght_full_Toast",
+      "value": "[TS_816885]_Maximum length reached."
+    },
+    {
+      "name": "ring_within_other_hours",
+      "value": "[TS_876306]_<%d hours remaining"
+    },
+    {
+      "name": "customize",
+      "value": "[TS_876304]_Custom"
+    },
+    {
+      "name": "once_alarm",
+      "value": "[TS_875365]_Never"
+    },
+    {
+      "name": "ring_within_one_hours",
+      "value": "[TS_876303]_<%d hour remaining"
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "[TS_878046]_Delete"
+    },
+    {
+      "name": "show_toast_name",
+      "value": "[TS_876302]_Holiday info will be updated over WLAN or mobile data."
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "[TS_878045]_编辑列表"
+    },
+    {
+      "name": "days_of_wake_type",
+      "value": "[TS_875366]_Work days"
+    }
+  ]
+}

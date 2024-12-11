@@ -13,10 +13,8 @@
  * limitations under the License.
  */
 
-export { ImageComponent } from './src/main/ets/components/imageComponent';
-
-export { default as ConfigData } from './src/main/ets/utils/ConfigData';
-
-export { default as TimerUtil } from './src/main/ets/utils/TimerUtil';
-
-export { default as LogUtil } from './src/main/ets/utils/LogUtil';
+export * from './src/main/ets/components/index';
+export * from './src/main/ets/utils/index';
+export * from './src/main/ets/manager/index';
+export * from './src/main/ets/types';
+export const RINGTONE_SELECTION: string = 'RingtoneSelection';

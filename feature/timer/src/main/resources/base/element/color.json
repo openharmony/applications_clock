@@ -1,12 +1,85 @@
 {
   "color": [
     {
-      "name": "background_color_white",
+      "name": "start_window_background",
       "value": "#FFFFFF"
     },
     {
-      "name": "shadow_color",
-      "value": "#1400001E"
+      "name": "teragray_left_color",
+      "value": "#203973"
+    },
+    {
+      "name": "teragray_center_color",
+      "value": "#7384A6"
+    },
+    {
+      "name": "text_picker_color",
+      "value": "#babbbd"
+    },
+    {
+      "name": "line_color",
+      "value": "#d3d3d3"
+    },
+    {
+      "name": "selected_picker_color",
+      "value": "#000"
+    },
+    {
+      "name": "teragray_right_color",
+      "value": "#CCD4DE"
+    },
+    {
+      "name": "timer_bottom_back",
+      "value": "#E2E6E9"
+    },
+    {
+      "name": "stopwatch_bottom_back",
+      "value": "#0c000000"
+    },
+    {
+      "name": "timer_background_color",
+      "value": "#00000000"
+    },
+    {
+      "name": "timer_PC_input_hover",
+      "value": "#e5e6e8"
+    },
+    {
+      "name": "timer_PC_input_focus",
+      "value": "#e8e9f7"
+    },
+    {
+      "name": "timer_PC_label_font_color",
+      "value": "#747577"
+    },
+    {
+      "name": "timer_PC_input_font_color",
+      "value": "#161616"
+    },
+    {
+      "name": "timer_PC_input_caret_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "timer_PC_input_default_color",
+      "value": "#f2f3f5"
+    },
+    {
+      "name": "timer_stroke",
+      "value": "#33000000"
+    },
+    {
+      "name": "timer_picker_bg",
+      "value": "#F1F3F5"
+    },{
+      "name": "snooze_button_background_color",
+      "value": "#33FFFFFF"
+    },{
+      "name": "snooze_button_border_color",
+      "value": "#66FFFFFF"
+    },{
+      "name": "snooze_button_text_color",
+      "value": "#FFFFFF"
     }
   ]
 }

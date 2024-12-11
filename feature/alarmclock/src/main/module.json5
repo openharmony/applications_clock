@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "alarmclock",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+  }
+}
