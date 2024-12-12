@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_clock_timer_click</title>
+    <g id="ic_clock_timer_click" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#007DFF" cx="12" cy="13" r="9"></circle>
+        <rect id="矩形" fill="#FFFFFF" x="11.2521064" y="6.9993329" width="1.5" height="6" rx="0.75"></rect>
+        <path d="M19.9750735,4.05472008 C20.2679667,4.34761329 20.2679667,4.82248703 19.9750735,5.11538025 L19.115384,5.97405016 L18.055384,4.91405016 L18.9144133,4.05472008 C19.2073065,3.76182686 19.6821803,3.76182686 19.9750735,4.05472008 Z" id="形状结合" fill="#007DFF" opacity="0.396958851"></path>
+        <rect id="矩形" fill="#007DFF" opacity="0.396958851" x="9" y="2" width="6" height="1.5" rx="0.75"></rect>
+    </g>
+</svg>

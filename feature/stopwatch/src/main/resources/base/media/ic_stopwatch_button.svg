@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_worldclock_filled_activated_1</title>
+    <g id="ic_worldclock_filled_activated" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab/ic_" transform="translate(2.000000, 2.000000)">
+            <path d="M10,0 C4.47725,0 0,4.47725 0,10 C0,15.52275 4.47725,20 10,20 C15.523,20 20,15.52275 20,10 C20,4.47725 15.523,0 10,0" id="形状结合" fill="#0A59F7"></path>
+        </g>
+    </g>
+</svg>

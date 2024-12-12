@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "stopwatch_title",
+      "value": "Stopwatch"
+    },
+    {
+      "name": "stopwatch",
+      "value": "Stopwatch"
+    },
+    {
+      "name": "tips_title",
+      "value": "The list is full."
+    }
+  ]
+}

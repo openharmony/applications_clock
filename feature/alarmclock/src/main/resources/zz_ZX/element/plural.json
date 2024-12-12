@@ -1,0 +1,149 @@
+{
+    "plural":[
+        {
+            "name":"alarm_alert_snooze_button_text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_810231]_Snooze (%d minutes)"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_810221]_Snooze (%d minute)"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_810229]_Snooze (%d minutes)"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_810227]_Snooze (%d minutes)"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_810238]_Snooze (%d minutes)"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_810224]_Snooze (%d minutes)"
+                }
+            ]
+        },
+        {
+            "name":"list_select_title",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_794232]_%d item selected"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_794219]_%d items selected"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_794246]_%d items selected"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_794256]_%d items selected"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_794236]_%d items selected"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_794228]_%d items selected"
+                }
+            ]
+        },
+        {
+            "name":"delete_alarms_msg",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_794259]_Delete %d alarm?"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_794255]_Delete %d alarms?"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_794263]_Delete %d alarms?"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_794226]_Delete %d alarms?"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_794234]_Delete %d alarms?"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_794266]_Delete %d alarms?"
+                }
+            ]
+        },
+        {
+            "name":"times",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_816880]_%dx"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_816883]_%dx"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_816879]_%dx"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_816884]_%dx"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_816881]_%dx"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_816882]_%dx"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_hours",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_843076]_<%d hours remaining"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_843079]_<%d hours remaining"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_843088]_<%d hour remaining"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_843086]_<%d hours remaining"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_843083]_<%d hours remaining"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_843075]_<%d hours remaining"
+                }
+            ]
+        }
+    ]
+}

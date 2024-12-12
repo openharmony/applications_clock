@@ -1,0 +1,39 @@
+{
+  "string": [
+    {
+      "name": "phone_desc",
+      "value": "phone product"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "phone product ability"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "clock"
+    },
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "FaCityManagerAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "FaCityManagerAbility_label",
+      "value": "label"
+    },{
+      "name": "timer",
+      "value": "timer"
+    },
+    {
+      "name": "ServiceExtAbility",
+      "value": "back up exntension"
+    }
+  ]
+}

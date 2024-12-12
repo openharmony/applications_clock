@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2022 HiHope Open Source Organization.
+/*
+ * Copyright (c) 2023-2024 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
-export { TimerView } from './src/main/ets/components/TimerView';
+export { Timer } from './src/main/ets/pages/index';
 
-export { TimerController, TimerState } from './src/main/ets/controller/TimerController';
+export { FullScreenTimer } from './src/main/ets/pages/FullScreenTimer';
+
+export { TimerNotificationUtil } from './src/main/ets/utils'

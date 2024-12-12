@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "[TS_843084]_form_description"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "[TS_843077]_form_label"
+    },
+    {
+      "name": "fa_alarm_alert",
+      "value": "[TS_843080]_Alarm clock"
+    },
+    {
+      "name": "phone_desc",
+      "value": "[TS_794208]_phone product"
+    },
+    {
+      "name": "FaCityManagerAbility_desc",
+      "value": "[TS_846749]_description"
+    },
+    {
+      "name": "FaCityManagerAbility_label",
+      "value": "[TS_846750]_label"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "[TS_794209]_phone product ability"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "[TS_794207]_clock"
+    },
+    {
+      "name": "timer",
+      "value": "[TS_869851]_Timer"
+    },
+    {
+      "name": "ServiceExtAbility",
+      "value": "[TS_870997]_back up exntension"
+    }
+  ]
+}

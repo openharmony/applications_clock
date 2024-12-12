@@ -1,0 +1,71 @@
+{
+    "plural":[
+        {
+            "name":"list_select_title",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"已选择 %d 项"
+                }
+            ]
+        },
+        {
+            "name":"delete_alarms_msg",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"是否删除此闹钟?"
+                },
+                {
+                    "quantity":"other",
+                    "value":"是否删除 %d 个闹钟?"
+                }
+            ]
+        },
+        {
+            "name":"alarm_alert_snooze_button_text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 分钟后提醒"
+                }
+            ]
+        },
+        {
+            "name":"times",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 次"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_hours",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 小时内响铃"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_days",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 天后响铃"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_minutes",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 分钟内响铃"
+                }
+            ]
+        }
+    ]
+}

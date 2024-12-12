@@ -1,0 +1,43 @@
+{
+  "plural":[
+    {
+      "name": "minute",
+      "value": [
+        {
+          "quantity":"one",
+          "value":"%d minute"
+        },
+        {
+          "quantity":"other",
+          "value":"%d minutes"
+        }
+      ]
+    },
+    {
+      "name": "hour",
+      "value": [
+        {
+          "quantity":"one",
+          "value":"%d hour"
+        },
+        {
+          "quantity":"other",
+          "value":"%d hours"
+        }
+      ]
+    },
+    {
+      "name": "day",
+      "value": [
+        {
+          "quantity":"one",
+          "value":"%d day"
+        },
+        {
+          "quantity":"other",
+          "value":"%d days"
+        }
+      ]
+    }
+  ]
+}

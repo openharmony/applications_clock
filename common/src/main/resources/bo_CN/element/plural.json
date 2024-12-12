@@ -1,0 +1,31 @@
+{
+    "plural":[
+        {
+            "name":"hour",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཆུ་ཚོད་ %d"
+                }
+            ]
+        },
+        {
+            "name":"day",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"ཉིན་ %d"
+                }
+            ]
+        },
+        {
+            "name":"minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"སྐར་མ་ %d"
+                }
+            ]
+        }
+    ]
+}

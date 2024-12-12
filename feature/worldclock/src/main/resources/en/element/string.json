@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "sort_city_title_new",
+      "value": "Edit cities"
+    },
+    {
+      "name": "today",
+      "value": "Today"
+    },
+    {
+      "name": "yesterday",
+      "value": "Yesterday"
+    },
+    {
+      "name": "tomorrow",
+      "value": "Tomorrow"
+    },
+    {
+      "name": "fastGMT",
+      "value": "%1$s%2$s ahead"
+    },
+    {
+      "name": "lateGMT",
+      "value": "%1$s%2$s behind"
+    },
+    {
+      "name": "world_clock",
+      "value": "World clock"
+    },
+    {
+      "name": "worldclock_city_exist_Toast",
+      "value": "You've already added this city."
+    },
+    {
+      "name": "world_digital_dst_tv",
+      "value": "DST"
+    },
+    {
+      "name":"city_full_Toast",
+      "value":"City list full. Delete a city before adding a new one."
+    },
+    {
+      "name": "fa_single_clock_name",
+      "value": "City clock"
+    },
+    {
+      "name": "fa_three_clock_name",
+      "value": "World clock"
+    },
+    {
+      "name":"fa_alarm_alert",
+      "value":"Alarm clock"
+    },
+    {
+      "name": "fa_select_city_title",
+      "value": "Select where you want to see the local time for."
+    },
+    {
+      "name": "fa_select_city",
+      "value": "City"
+    },
+    {
+      "name": "fa_city_pre1",
+      "value": "Beijing"
+    },
+    {
+      "name": "fa_city_pre2",
+      "value": "Paris"
+    },
+    {
+      "name": "fa_city_pre3",
+      "value": "London"
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "Edit list"
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "Clear"
+    }
+  ]
+}

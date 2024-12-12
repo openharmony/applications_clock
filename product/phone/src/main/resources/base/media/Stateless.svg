@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="54px" viewBox="0 0 140 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 19</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#593582" offset="0.0245847902%"></stop>
+            <stop stop-color="#1F155C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#B7E3E6" offset="0%"></stop>
+            <stop stop-color="#B6CFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板备份-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(76.6362, 27.3536) rotate(-180) translate(-76.6362, -27.3536)translate(-0, -7.0972)">
+        </g>
+        <g id="编组-8备份-2" transform="translate(70, 27.0011) scale(-1, 1) translate(-70, -27.0011)translate(-0, -0.0001)">
+            <polygon id="蒙版备份-18" fill="#D5EEFF" points="1.42108547e-14 0.00164435734 140 0.00164435734 140 54.0016444 1.42108547e-14 54.0016444"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,56 @@
+{
+  "color": [
+    {
+      "name": "stopwatch_shadow_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "stopwatch_shadow_background_transparent_color",
+      "value": "#00F1F3F5"
+    },
+    {
+      "name": "stopwatch_max_color",
+      "value": "#e44025"
+    },
+    {
+      "name": "stopwatch_min_color",
+      "value": "#61bb58"
+    },
+    {
+      "name": "stopwatch_default_color",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "stopwatch_max_color_num",
+      "value": "#ffffff"
+    },
+    {
+      "name": "stopwatch_min_color_num",
+      "value": "#000000"
+    },
+    {
+      "name": "stopwatch_fon_size_max",
+      "value": "#e44025"
+    },
+    {
+      "name": "stopwatch_fon_size_min",
+      "value": "#61bb58"
+    },
+    {
+      "name": "stopwatch_fon_size_default",
+      "value": "#6c6c6c"
+    },
+    {
+      "name": "line_color",
+      "value": "#d3d3d3"
+    },
+    {
+      "name": "stopwatch_bottom_back",
+      "value": "#0c000000"
+    },
+    {
+      "name": "stopwatch_button_back",
+      "value": "#00000000"
+    }
+  ]
+}

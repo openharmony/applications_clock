@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "only_ring_once",
+      "value": "Custom"
+    },
+    {
+      "name": "every_day",
+      "value": "Every day"
+    },
+    {
+      "name": "cancel",
+      "value": "CANCEL"
+    },
+    {
+      "name": "ok",
+      "value": "OK"
+    },
+    {
+      "name": "alarm_clock",
+      "value": "Alarm"
+    },
+    {
+      "name": "monday_to_friday",
+      "value": "Monday to Friday"
+    },
+    {
+      "name": "default_alarm_label",
+      "value": "Good morning"
+    },
+    {
+      "name": "default_alarm_label_new",
+      "value": "Good morning"
+    },
+    {
+      "name": "text_with_separate",
+      "value": "%1$s, %2$s"
+    }
+  ]
+}
