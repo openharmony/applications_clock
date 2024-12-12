@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "main_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "main_tab_selected_text_clock",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "main_tab_unselected_text_clock",
+      "value": "#606162"
+    },
+    {
+      "name": "fa_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "fa_clock_digit_color",
+      "value": "#E5D41919"
+    },
+    {
+      "name": "fa_clock_digit_color_night",
+      "value": "#99FFFFFF"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "item_title_font",
+      "value": "#000000"
+    }
+  ]
+}

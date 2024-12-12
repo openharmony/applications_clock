@@ -1,8 +1,43 @@
 {
   "string": [
     {
+      "name": "phone_desc",
+      "value": "phone product"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "phone product ability"
+    },
+    {
       "name": "MainAbility_label",
-      "value": "时钟"
+      "value": "clock"
+    },
+    {
+      "name": "EntryFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "EntryFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "FaCityManagerAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "FaCityManagerAbility_label",
+      "value": "label"
+    },{
+      "name": "timer",
+      "value": "计时器"
+    },
+    {
+      "name": "ServiceExtAbility",
+      "value": "back up exntension"
+    },
+    {
+      "name": "fa_alarm_alert",
+      "value": "闹钟提醒"
     }
   ]
 }

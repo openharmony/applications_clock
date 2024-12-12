@@ -1,0 +1,91 @@
+{
+    "plural":[
+        {
+            "name":"hour",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"[TS_794231]_%d hour"
+                },
+                {
+                    "quantity":"other",
+                    "value":"[TS_794249]_%d hours"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_794260]_%d hours"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_794257]_%d hours"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_794238]_%d hours"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_794247]_%d hours"
+                }
+            ]
+        },
+        {
+            "name":"day",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_794244]_%d days"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_794258]_%d day"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_794252]_%d days"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_794250]_%d days"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_794214]_%d days"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_794216]_%d days"
+                }
+            ]
+        },
+        {
+            "name":"minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"[TS_794235]_%d minutes"
+                },
+                {
+                    "quantity":"one",
+                    "value":"[TS_794220]_%d minute"
+                },
+                {
+                    "quantity":"zero",
+                    "value":"[TS_794237]_%d minutes"
+                },
+                {
+                    "quantity":"few",
+                    "value":"[TS_794253]_%d minutes"
+                },
+                {
+                    "quantity":"many",
+                    "value":"[TS_794264]_%d minutes"
+                },
+                {
+                    "quantity":"two",
+                    "value":"[TS_794215]_%d minutes"
+                }
+            ]
+        }
+    ]
+}

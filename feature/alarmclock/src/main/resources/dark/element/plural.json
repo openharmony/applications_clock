@@ -1,0 +1,101 @@
+{
+  "plural": [
+    {
+      "name": "list_select_title",
+      "value": [
+        {
+          "quantity": "one",
+          "value": "%d item selected"
+        },
+        {
+          "quantity": "other",
+          "value": "%d items selected"
+        }
+      ]
+    },
+    {
+      "name": "delete_alarms_msg",
+      "value": [
+        {
+          "quantity": "one",
+          "value": "Delete %d alarm?"
+        },
+        {
+          "quantity": "other",
+          "value": "Delete %d alarms?"
+        }
+      ]
+    },
+    {
+      "name": "alarm_alert_snooze_button_text",
+      "value": [
+        {
+          "quantity": "one",
+          "value": "Snooze (%d minute)"
+        },
+        {
+          "quantity": "other",
+          "value": "Snooze (%d minutes)"
+        }
+      ]
+    },
+    {
+      "name":"ring_within_hours",
+      "value":[
+        {
+          "quantity":"one",
+          "value":"<%d hour remaining"
+        },
+        {
+          "quantity":"zero",
+          "value":"<%d hours remaining"
+        },
+        {
+          "quantity":"two",
+          "value":"<%d hours remaining"
+        },
+        {
+          "quantity":"few",
+          "value":"<%d hours remaining"
+        },
+        {
+          "quantity":"many",
+          "value":"<%d hours remaining"
+        },
+        {
+          "quantity":"other",
+          "value":"<%d hours remaining"
+        }
+      ]
+    },
+    {
+      "name": "times",
+      "value": [
+        {
+          "quantity": "other",
+          "value": "%dx"
+        },
+        {
+          "quantity": "one",
+          "value": "%dx"
+        },
+        {
+          "quantity": "zero",
+          "value": "%dx"
+        },
+        {
+          "quantity": "few",
+          "value": "%dx"
+        },
+        {
+          "quantity": "many",
+          "value": "%dx"
+        },
+        {
+          "quantity": "two",
+          "value": "%dx"
+        }
+      ]
+    }
+  ]
+}

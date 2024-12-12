@@ -1,0 +1,49 @@
+{
+    "plural":[
+        {
+            "name":"delete_alarms_msg",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"刪除 %d 個鬧鐘？"
+                }
+            ]
+        },
+        {
+            "name":"times",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 次"
+                }
+            ]
+        },
+        {
+            "name":"alarm_alert_snooze_button_text",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 分鐘後提醒"
+                }
+            ]
+        },
+        {
+            "name":"list_select_title",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"已選擇 %d 個"
+                }
+            ]
+        },
+        {
+            "name":"ring_within_hours",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d 小時內響鬧"
+                }
+            ]
+        }
+    ]
+}

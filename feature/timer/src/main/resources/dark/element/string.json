@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "timer_title_new",
+      "value": "Timer"
+    },
+    {
+      "name": "timer_picker_hours",
+      "value": "hour"
+    },
+    {
+      "name": "timer_picker_minutes",
+      "value": "minute"
+    },
+    {
+      "name": "timer_picker_seconds",
+      "value": "second"
+    },
+    {
+      "name": "timer",
+      "value": "计时器"
+    }
+  ]
+}

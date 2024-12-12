@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2022 HiHope Open Source Organization.
+/*
+ * Copyright (c) 2023-2024 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,32 +13,33 @@
  * limitations under the License.
  */
 
-import HiLog from '@ohos.hilog';
+import hilog from '@ohos.hilog';
 
-const DOMAIN = 0x0500;
-const TAG = '[Clock]';
+const DOMAIN = 0x66EE;
+const FORMAT = '%{public}s';
+const PREFIX = '[Clock]';
+const SEPARATOR = ' ';
 
 /**
- *  log package tool class
+ * 日志打印工具类
+ *
+ * @author XiaHan
+ * @since 2022-07-06
  */
-export default class LogUtil {
-    static debug(msg): void {
-        HiLog.debug(DOMAIN, TAG, msg);
-    }
+export class LogUtil {
+  static debug(tag, ...args: string[]): void {
+    hilog.debug(DOMAIN, PREFIX, FORMAT, `tag: ${tag} --> ${args.join(SEPARATOR)}`);
+  }
 
-    static log(msg): void {
-        HiLog.info(DOMAIN, TAG, msg);
-    }
+  static info(tag, ...args: string[]): void {
+    hilog.info(DOMAIN, PREFIX, FORMAT, `tag: ${tag} --> ${args.join(SEPARATOR)}`);
+  }
 
-    static info(msg): void {
-        HiLog.info(DOMAIN, TAG, msg);
-    }
+  static warn(tag, ...args: string[]): void {
+    hilog.warn(DOMAIN, PREFIX, FORMAT, `tag: ${tag} --> ${args.join(SEPARATOR)}`);
+  }
 
-    static warn(msg): void {
-        HiLog.warn(DOMAIN, TAG, msg);
-    }
-
-    static error(msg): void {
-        HiLog.error(DOMAIN, TAG, msg);
-    }
+  static error(tag, ...args: string[]): void {
+    hilog.error(DOMAIN, PREFIX, FORMAT, `tag: ${tag} --> ${args.join(SEPARATOR)}`);
+  }
 }

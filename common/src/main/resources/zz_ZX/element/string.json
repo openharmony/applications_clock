@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "cancel",
+      "value": "[TS_794206]_Cancel"
+    },
+    {
+      "name": "text_with_separate",
+      "value": "[TS_794217]_%1$s, %2$s"
+    },
+    {
+      "name": "monday_to_friday",
+      "value": "[TS_810239]_Monday to Friday"
+    },
+    {
+      "name": "default_alarm_label_new",
+      "value": "[TS_810225]_Good morning"
+    },
+    {
+      "name": "default_alarm_label",
+      "value": "[TS_810232]_Good morning"
+    },
+    {
+      "name": "every_day",
+      "value": "[TS_794243]_Every day"
+    },
+    {
+      "name": "only_ring_once",
+      "value": "[TS_794254]_Custom"
+    },
+    {
+      "name": "ok",
+      "value": "[TS_794211]_OK"
+    },
+    {
+      "name": "alarm_clock",
+      "value": "[TS_794240]_Alarm"
+    },
+    {
+      "name": "timer_title_new",
+      "value": "[TS_882459]_Timer"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "[TS_794251]_Delete"
+    }
+  ]
+}

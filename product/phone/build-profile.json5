@@ -1,10 +1,31 @@
 {
   "apiType": 'stageMode',
   "buildOption": {
+    //    "compileMode": "esmodule",
+    "sourceOption": {
+      "workers": [
+        "./src/main/ets/workers/AudioWorker.ts"
+      ]
+    },
+    "arkOptions": {
+      "apPath": "./modules.ap"
+    },
   },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false
+          }
+        }
+      }
+    },
+  ],
   "targets": [
     {
-      "name": "default"
+      "name": "default",
     },
     {
       "name": "ohosTest",

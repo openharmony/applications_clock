@@ -1,0 +1,43 @@
+{
+    "plural":[
+        {
+            "name":"hour",
+            "value":[
+                {
+                    "quantity":"one",
+                    "value":"%d سائەت"
+                },
+                {
+                    "quantity":"other",
+                    "value":"%d سائەت"
+                }
+            ]
+        },
+        {
+            "name":"day",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d كۈن"
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d كۈن"
+                }
+            ]
+        },
+        {
+            "name":"minute",
+            "value":[
+                {
+                    "quantity":"other",
+                    "value":"%d مىنۇت"
+                },
+                {
+                    "quantity":"one",
+                    "value":"%d مىنۇت"
+                }
+            ]
+        }
+    ]
+}

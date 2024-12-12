@@ -1,0 +1,220 @@
+{
+  "string": [
+    {
+      "name": "ring_in",
+      "value": "%1$s 后响铃"
+    },
+    {
+      "name": "ring_in_new",
+      "value": "%1$s后响铃"
+    },
+    {
+      "name": "ring_in_new_two",
+      "value": "%1$s %2$s后响铃"
+    },
+    {
+      "name": "ring_in_new_other",
+      "value": "%1$s %2$s %3$s后响铃"
+    },
+    {
+      "name": "ring_in_thirety",
+      "value": "%1$s 内响铃"
+    },
+    {
+      "name": "less_than_one_minute",
+      "value": "1 分钟内响铃"
+    },
+    {
+      "name": "no_alarms_on",
+      "value": "所有闹钟已关闭"
+    },
+    {
+      "name": "no_alarms",
+      "value": "没有闹钟"
+    },
+    {
+      "name": "fa_no_alarms",
+      "value": "无闹钟开启"
+    },
+    {
+      "name": "ringing_soon",
+      "value": "即将响铃"
+    },
+    {
+      "name": "fa_ringing",
+      "value": "正在响铃"
+    },
+    {
+      "name": "repeat",
+      "value": "重复"
+    },
+    {
+      "name": "sound",
+      "value": "闹钟铃声"
+    },
+    {
+      "name": "label",
+      "value": "闹钟名"
+    },
+    {
+      "name": "ring_duration",
+      "value": "响铃时长"
+    },
+    {
+      "name": "snooze_duration",
+      "value": "再响间隔"
+    },
+    {
+      "name": "snooze_duration_time",
+      "value": "响铃间隔时间 (分钟)"
+    },
+    {
+      "name": "number_of_snoozes",
+      "value": "重复响铃次数"
+    },
+    {
+      "name": "add_alarm",
+      "value": "新建闹钟"
+    },
+    {
+      "name": "edit_alarm",
+      "value": "编辑闹钟"
+    },
+    {
+      "name": "delete_alarm",
+      "value": "删除闹钟"
+    },
+    {
+      "name": "list_select_title_none",
+      "value": "未选择"
+    },
+    {
+      "name": "delete",
+      "value": "删除"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "删除"
+    },
+    {
+      "name": "list_select_all",
+      "value": "全选"
+    },
+    {
+      "name": "list_unselect_all",
+      "value": "取消全选"
+    },
+    {
+      "name": "delete_alarm_confirm",
+      "value": "是否删除此闹钟？"
+    },
+    {
+      "name": "delete_all_alarms_confirm",
+      "value": "是否删除全部闹钟？"
+    },
+    {
+      "name": "save_changes_confirm",
+      "value": "是否保存更改？"
+    },
+    {
+      "name": "quit",
+      "value": "放弃"
+    },
+    {
+      "name": "keep",
+      "value": "保存"
+    },
+    {
+      "name": "slide_to_turn_off",
+      "value": "滑动关闭闹铃"
+    },
+    {
+      "name": "alarm_notify_snooze_title",
+      "value": "%s (稍后提醒)"
+    },
+    {
+      "name": "alarm_notify_snooze_context",
+      "value": "%s 再响"
+    },
+    {
+      "name": "format_notify_text",
+      "value": "%1$s - %2$s"
+    },
+    {
+      "name": "close",
+      "value": "关闭"
+    },
+    {
+      "name": "sleep",
+      "value": "稍后提醒"
+    },
+    {
+      "name": "alarm_notify_miss_label",
+      "value": "%s (已错过)"
+    },
+    {
+      "name": "strlenght_full_Toast",
+      "value": "输入字数已达上限"
+    },
+    {
+      "name": "once_alarm",
+      "value": "单次"
+    },
+    {
+      "name": "customize",
+      "value": "自定义"
+    },
+    {
+      "name": "days_of_wake_type",
+      "value": "法定工作日"
+    },
+    {
+      "name": "show_toast_name",
+      "value": "网络服务不可用"
+    },
+    {
+      "name": "ring_within_one_days",
+      "value": "%d 天后响铃"
+    },
+    {
+      "name": "ring_within_other_days",
+      "value": "%d 天后响铃"
+    },
+    {
+      "name": "ring_within_minutes",
+      "value": "%d 分钟内响铃"
+    },
+    {
+      "name": "alarm_tips_title",
+      "value": "编辑列表"
+    },
+    {
+      "name": "alarm_tips_del",
+      "value": "删除"
+    },
+    {
+      "name": "ring_within_one_hours",
+      "value": "%d 小时内响铃"
+    },
+    {
+      "name": "ring_within_other_hours",
+      "value": "%d 小时内响铃"
+    },
+    {
+      "name": "close_only_once",
+      "value": "仅关闭一次"
+    },
+    {
+      "name": "close_repeating_alarm",
+      "value": "关闭该重复闹钟"
+    },
+    {
+      "name": "open_tomorrow",
+      "value": " | 将在明天开启"
+    },
+    {
+      "name": "will_open",
+      "value": " | 将在%1$s月%2$s日开启"
+    }
+  ]
+}

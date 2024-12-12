@@ -1,0 +1,19 @@
+{
+  "color": [
+    {
+      "name": "fa_card_title_color",
+      "value": "#ff151414"
+    },
+    {
+      "name": "fa_select_tip_color",
+      "value": "#66ffffff"
+    },{
+      "name": "pressed_state_icon_background_color",
+      "value": "#1A000000"
+    },
+    {
+      "name": "add_button_color",
+      "value": "#0A59F7"
+    }
+  ]
+}

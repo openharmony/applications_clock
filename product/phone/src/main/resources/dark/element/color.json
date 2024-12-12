@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "fa_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "fa_clock_digit_color",
+      "value": "#E5D41919"
+    },
+    {
+      "name": "fa_clock_digit_color_night",
+      "value": "#99FFFFFF"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#000000"
+    },
+    {
+      "name": "item_title_font",
+      "value": "#000000"
+    },
+    {
+      "name": "tab_bar_bg",
+      "value": "#202224"
+    }
+  ]
+}
