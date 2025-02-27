@@ -399,6 +399,7 @@ struct Index {
   }
 
   async aboutToDisappear(): Promise<void> {
+    LogUtil.info(TAG, 'aboutToDisappear');
     this.unSubscribeCommentAsLockEvent();
     this.unSubscribeEvents();
     BreakpointManager.unregister();
