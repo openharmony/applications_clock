@@ -21,6 +21,26 @@
                     desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
                     name="*.json5.ftl"
                     type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/alarmclock/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/worldclock/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/stopwatch/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/timer/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="common/BuildProfile.ets"
+                        type="filename"/>
             </filefilter>
             <filefilter
                 desc="Filters for resources files policies"
@@ -61,6 +81,74 @@
                     desc="应用内置资源文件，无需修改"
                     name="product/phone/src/ohosTest/resources/base/media/icon.png"
                     type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/base/media/app_icon.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/base/media/background.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/base/media/foreground.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/base/media/starting_window.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/dark/media/background.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/dark/media/foreground.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/dark/media/icon.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="product/phone/src/main/resources/dark/media/starting_window.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/stopwatch/src/main/resources/base/media/img_stopwatch_dial_scale.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/stopwatch/src/main/resources/base/media/img_stopwatch_minutehand.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/stopwatch/src/main/resources/base/media/img_stopwatch_minutehand_shadow.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/stopwatch/src/main/resources/base/media/img_stopwatch_minutes_dial_scale.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/timer/src/main/resources/base/media/img_clock_timer_bg.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/timer/src/main/resources/base/media/img_clock_timer_dial_secondhand.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="feature/timer/src/main/resources/dark/media/img_clock_timer_bg.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="common/src/main/resources/base/media/img_clock_dial_scale_day.png"
+                        type="filepath"/>
+                <filteritem
+                        desc="Provided by the UX team."
+                        name="common/src/main/ets/libs/lottieArkTS.har"
+                        type="filepath"/>
             </filefilter>
             <filefilter
                 desc="Filters for compatibility，license header policies"
@@ -81,6 +169,26 @@
                     desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"
                     name="*.json5.ftl"
                     type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/alarmclock/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/worldclock/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/stopwatch/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="feature/timer/BuildProfile.ets"
+                        type="filename"/>
+                <filteritem
+                        desc="BuildProfile配置文件，DevEco Studio自动生成，不手动修改"
+                        name="common/BuildProfile.ets"
+                        type="filename"/>
             </filefilter>
         </filefilterlist>
         <policylist>
