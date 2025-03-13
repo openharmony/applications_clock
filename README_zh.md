@@ -28,7 +28,7 @@
 ├── product                   # 业务形态层目录
 ```
 ## 安装
-对应用完成签名,打包后，使用`hdc_std install "hap包地址"`命令进行安装
+对应用完成签名，打包后，使用`hdc_std install "hap包地址"`命令进行安装。
 ![](./figures/signature.png)
 ![](./figures/buildHap.png)
 ![](./figures/install.png)
