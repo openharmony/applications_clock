@@ -5,13 +5,13 @@ The clock application can implement hte stopwatch timing function and countdown 
 The clock application is developed using the extended TS language (ArkTS), and its main structure is as follows:
 ![](./figures/clock.png)
 - **Product**
-  Business form layer：Business form layer: Distinguish different products, different screens of various forms of application, including personalized services, component configuration, and personalized resource packages.
+  Business form layer：Business form layer: Distinguish different products, different screens of various forms of application, including personalized services, component configuration, and personalized resource packages.(To distinguish between tablet and default device forms, different products have different page layouts, mobile phone configurations, and accessible voice resources.)
 
 - **Feature**
-  Common Feature layer：An abstract collection of common feature components that can be referenced by various application forms, contains UI encapsulation components and logic controllers corresponding to the features.
+  Common Feature layer：An abstract collection of common feature components that can be referenced by various application forms, contains UI encapsulation components and logic controllers corresponding to the features.(Such as page files, TimerPick components for timers, etc.)
 
 - **Common**
-  Common Capability Layer：Basic capability set, a module that every application form must rely on, including universal UI encapsulation components, utility classes, and universal resource packages.
+  Common Capability Layer：Basic capability set, a module that every application form must rely on, including universal UI encapsulation components, utility classes, and universal resource packages.(Such as adding an alarm button and adding a world clock button, alarm clock dial, and world clock dial.)
 
 ## Directory
 ### Directory structure
