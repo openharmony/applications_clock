@@ -4,11 +4,12 @@
     ],
     "products": [
       {
-        "compatibleSdkVersion": "4.1.0(11)",
-        "targetSdkVersion": "4.1.0(11)",
         "name": "default",
-        "signingConfig": "default",
-        "runtimeOS": "HarmonyOS"
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "targetSdkVersion": 12,
+        "runtimeOS": "OpenHarmony",
+        "signingConfig": "default"
       }
     ]
   },
