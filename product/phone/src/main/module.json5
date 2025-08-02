@@ -7,8 +7,7 @@
     "mainElement": "com.example.ohosclock.phone",
     "deviceTypes": [
       "default",
-      "tablet",
-      "2in1"
+      "tablet"
     ],
     "deliveryWithInstall": true,
     "installationFree": false,
@@ -33,7 +32,7 @@
             ]
           }
         ]
-      },
+      }
       //      {
       //        "name": "com.huawei.hmos.clock.ForegroundAbility",
       //        "srcEntry": "./ets/ForegroundAbility/ForegroundAbility.ets",
