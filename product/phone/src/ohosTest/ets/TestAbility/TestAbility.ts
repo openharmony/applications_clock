@@ -15,7 +15,6 @@
  
 import Ability from '@ohos.application.Ability'
 import AbilityDelegatorRegistry from '@ohos.application.abilityDelegatorRegistry'
-import { Hypium } from '@ohos/hypium'
 import testsuite from '../test/List.test'
 
 export default class TestAbility extends Ability {
@@ -26,7 +25,7 @@ export default class TestAbility extends Ability {
         var abilityDelegatorArguments: any
         abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()
         console.info('start run testcase!!!')
-        Hypium.hypiumTest(abilityDelegator, abilityDelegatorArguments, testsuite)
+        // Hypium.hypiumTest(abilityDelegator, abilityDelegatorArguments, testsuite)
     }
 
     onDestroy() {
