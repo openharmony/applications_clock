@@ -3,17 +3,12 @@
   "license": "ISC",
   "devDependencies": {},
   "name": "ohosclock",
-  "ohos": {
-    "org": "huawei",
-    "directoryLevel": "project",
-    "buildTool": "hvigor"
-  },
   "description": "example description",
   "repository": {},
   "version": "1.0.0",
   "dependencies": {
-    "@ohos/hypium": "1.0.9",
-    //		"@ohos/hvigor-ohos-plugin":"1.1.6",
-    //		"@ohos/hvigor":"1.1.6"
+    // "@ohos/hypium": "1.0.9",
+    // "@ohos/hvigor-ohos-plugin": "1.1.6",
+    // "@ohos/hvigor": "1.1.6"
   }
 }

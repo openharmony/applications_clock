@@ -68,7 +68,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -98,7 +98,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -128,7 +128,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -157,7 +157,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -215,7 +215,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -238,7 +238,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }
@@ -266,7 +266,7 @@ export class WantAgentUtil {
             },
           }
         ],
-        operationType: wantAgent.OperationType.START_ABILITY,
+        // operationType: wantAgent.OperationType.START_ABILITY,
         wantAgentFlags: [wantAgent.WantAgentFlags.UPDATE_PRESENT_FLAG],
         requestCode: AGENT_REQUEST_CODE_NORMAL,
       }

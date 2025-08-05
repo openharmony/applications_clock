@@ -63,7 +63,7 @@ import { AnalogTimer, TimerPicker, TimerPickerForPC } from '../components';
 import window from '@ohos.window';
 import { RingtoneSelectionUtil } from '@hmos/common/src/main/ets/utils/RingtoneSelectionUtil';
 import { DateObject, formatMillisecondToObject } from '../common/Utils';
-import lottie, { AnimationItem } from '../../../../../../common/oh_modules/@ohos/lottie';
+// import lottie, { AnimationItem } from '../../../../../../common/oh_modules/@ohos/lottie';
 import deviceInfo from '@ohos.deviceInfo'
 import notificationManager from '@ohos.notificationManager'
 import worker from '@ohos.worker';
@@ -197,7 +197,7 @@ export struct Timer {
   private canvasTimerPauseAnimatePath: string = 'resources/rawfile/pauseToPlay.json';
   // 动画json
   private canvasAnimatePath: string = 'resources/rawfile/playToPause.json';
-  private animateItem: AnimationItem | null = null;
+  // private animateItem: AnimationItem | null = null;
 
   private listenTime() {
     this.canvasOpacity = this.totalTime > 0 ? 1 : 0.4;
@@ -796,55 +796,55 @@ export struct Timer {
 
   // 初始化动画
   private initAnimation() {
-    if (!this.started) {
-      this.pauseAnimation();
-    } else if (!this.paused) {
-      this.playAnimation();
-    } else {
-      this.pauseAnimation();
-    }
-    if (this.animateItem != null) {
-      this.animateItem.destroy()
-      this.animateItem = null
-    }
-    this.currentAnimateName = 'pauseTimer';
-    this.animateItem = lottie.loadAnimation({
-      container: this.controller,
-      renderer: 'canvas',
-      loop: false,
-      autoplay: false,
-      name: this.timerCanvasAnimateName,
-      path: this.canvasAnimatePath
-    })
+    // if (!this.started) {
+    //   this.pauseAnimation();
+    // } else if (!this.paused) {
+    //   this.playAnimation();
+    // } else {
+    //   this.pauseAnimation();
+    // }
+    // if (this.animateItem != null) {
+    //   this.animateItem.destroy()
+    //   this.animateItem = null
+    // }
+    // this.currentAnimateName = 'pauseTimer';
+    // this.animateItem = lottie.loadAnimation({
+    //   container: this.controller,
+    //   renderer: 'canvas',
+    //   loop: false,
+    //   autoplay: false,
+    //   name: this.timerCanvasAnimateName,
+    //   path: this.canvasAnimatePath
+    // })
   }
 
   // 初始动画
   private initPauseAnimation() {
-    if (this.animateItem != null) {
-      this.animateItem.destroy()
-      this.animateItem = null
-    }
-    this.currentAnimateName = 'playTimer';
-    this.animateItem = lottie.loadAnimation({
-      container: this.controller,
-      renderer: 'canvas',
-      loop: false,
-      autoplay: false,
-      name: this.canvasTimerPauseAnimateName,
-      path: this.canvasTimerPauseAnimatePath
-    })
+    // if (this.animateItem != null) {
+    //   this.animateItem.destroy()
+    //   this.animateItem = null
+    // }
+    // this.currentAnimateName = 'playTimer';
+    // this.animateItem = lottie.loadAnimation({
+    //   container: this.controller,
+    //   renderer: 'canvas',
+    //   loop: false,
+    //   autoplay: false,
+    //   name: this.canvasTimerPauseAnimateName,
+    //   path: this.canvasTimerPauseAnimatePath
+    // })
   }
 
   // 暂停到开始动画
   private playAnimation() {
-    lottie.setDirection(this.currentAnimateName == 'pauseTimer' ? 1 : -1, this.getCurrentCanvasName());
-    lottie.play(this.getCurrentCanvasName());
+    // lottie.setDirection(this.currentAnimateName == 'pauseTimer' ? 1 : -1, this.getCurrentCanvasName());
+    // lottie.play(this.getCurrentCanvasName());
   }
 
   // 开始到暂停动画
   private pauseAnimation() {
-    lottie.setDirection(this.currentAnimateName == 'pauseTimer' ? -1 : 1, this.getCurrentCanvasName());
-    lottie.play(this.getCurrentCanvasName());
+    // lottie.setDirection(this.currentAnimateName == 'pauseTimer' ? -1 : 1, this.getCurrentCanvasName());
+    // lottie.play(this.getCurrentCanvasName());
   }
 
   getCurrentCanvasName(): string {
