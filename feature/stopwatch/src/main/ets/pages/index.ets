@@ -70,7 +70,7 @@ import {
 } from './types'
 import promptAction from '@ohos.promptAction'
 import curves from '@ohos.curves';
-import lottie, { AnimationItem } from '../../../../../../common/oh_modules/@ohos/lottie';
+// import lottie, { AnimationItem } from '../../../../../../common/oh_modules/@ohos/lottie';
 import deviceInfo from '@ohos.deviceInfo'
 import emitter from '@ohos.events.emitter';
 
@@ -154,7 +154,7 @@ export struct Stopwatch {
   // 动画json
   private canvasAnimatePath: string = 'resources/rawfile/playToPause.json';
   private canvasPauseAnimatePath: string = 'resources/rawfile/pauseToPlay.json';
-  private animateItem: AnimationItem | null = null;
+  // private animateItem: AnimationItem | null = null;
   private isDeviceModels: string = 'NOH-AN00'
   private isFoldCross: number = 2224;
   private isFoldVertical: number = 2496;
@@ -689,48 +689,48 @@ export struct Stopwatch {
 
   // 初始动画
   private initAnimation() {
-    if (this.animateItem != null) {
-      this.animateItem.destroy()
-      this.animateItem = null
-    }
-    this.currentAnimateName = 'pause';
-    this.animateItem = lottie.loadAnimation({
-      container: this.controller,
-      renderer: 'canvas',
-      loop: false,
-      autoplay: false,
-      name: this.canvasAnimateName,
-      path: this.canvasAnimatePath
-    })
+    // if (this.animateItem != null) {
+    //   this.animateItem.destroy()
+    //   this.animateItem = null
+    // }
+    // this.currentAnimateName = 'pause';
+    // this.animateItem = lottie.loadAnimation({
+    //   container: this.controller,
+    //   renderer: 'canvas',
+    //   loop: false,
+    //   autoplay: false,
+    //   name: this.canvasAnimateName,
+    //   path: this.canvasAnimatePath
+    // })
   }
 
   // 初始动画
   private initPauseAnimation() {
-    if (this.animateItem != null) {
-      this.animateItem.destroy()
-      this.animateItem = null
-    }
-    this.currentAnimateName = 'play';
-    this.animateItem = lottie.loadAnimation({
-      container: this.controller,
-      renderer: 'canvas',
-      loop: false,
-      autoplay: false,
-      name: this.canvasPauseAnimateName,
-      path: this.canvasPauseAnimatePath
-    })
+    // if (this.animateItem != null) {
+    //   this.animateItem.destroy()
+    //   this.animateItem = null
+    // }
+    // this.currentAnimateName = 'play';
+    // this.animateItem = lottie.loadAnimation({
+    //   container: this.controller,
+    //   renderer: 'canvas',
+    //   loop: false,
+    //   autoplay: false,
+    //   name: this.canvasPauseAnimateName,
+    //   path: this.canvasPauseAnimatePath
+    // })
   }
 
   // 开始动画
   private playAnimation() {
-    lottie.setDirection(this.currentAnimateName == 'pause' ? 1 : -1, this.getCurrentCanvasName());
-    lottie.play(this.getCurrentCanvasName());
+    // lottie.setDirection(this.currentAnimateName == 'pause' ? 1 : -1, this.getCurrentCanvasName());
+    // lottie.play(this.getCurrentCanvasName());
   }
 
   // 暂停动画
   private pauseAnimation() {
-    lottie.setDirection(this.currentAnimateName == 'pause' ? -1 : 1, this.getCurrentCanvasName());
-    lottie.play(this.getCurrentCanvasName());
+    // lottie.setDirection(this.currentAnimateName == 'pause' ? -1 : 1, this.getCurrentCanvasName());
+    // lottie.play(this.getCurrentCanvasName());
   }
 
   getCurrentCanvasName(): string {
