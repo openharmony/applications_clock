@@ -1,3 +1,11 @@
 [
-
+    {
+        "Name": "lottieArkTS",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "2.0.5",
+        "Owner": "xiafeng@huawei.com",
+        "Upstream URL": "https://gitcode.com/openharmony-tpc/lottieArkTS",
+        "Description": "Lottie is an animation library for OpenHarmony that parses Adobe After Effects animations, exported as JSON files with Bodymovin, and renders them natively on mobile devices."
+    }
 ]
