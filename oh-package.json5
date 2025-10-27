@@ -1,14 +1,13 @@
 {
-  "modelVersion": "5.0.0",
+  "modelVersion": "5.0.2",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  },
   "name": "ohosclock",
   "description": "example description",
   "repository": {},
   "version": "1.0.0",
   "dependencies": {
-    // "@ohos/hypium": "1.0.9",
-    // "@ohos/hvigor-ohos-plugin": "1.1.6",
-    // "@ohos/hvigor": "1.1.6"
   }
 }
