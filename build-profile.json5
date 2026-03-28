@@ -5,8 +5,8 @@
     "products": [
       {
         "name": "default",
-        "compileSdkVersion": 20,
-        "compatibleSdkVersion": 12,
+        "compileSdkVersion": 23,
+        "compatibleSdkVersion": 23,
         "signingConfig": "default"
       }
     ]
