@@ -1,7 +1,7 @@
 # Clock Application
 
 ## Introduction
-`Clock` is a basic clock application in the OpenHarmony system, providing four core functions: alarm, stopwatch, countdown timer, and world clock. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, supports multiple device forms including Phone and Tablet, and features responsive layout, multi-device adaptation, and accessibility support.
+`Clock` is a basic clock application in the OpenHarmony system, providing four core functions: alarm, stopwatch, countdown timer, and world clock. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, supports multiple device forms including Phone and Tablet, and features responsive layout, and multi-device adaptation.
 
 Clock includes the following common functions:
 
@@ -170,7 +170,7 @@ applications_clock-master/              # Clock application root directory
 │   │   ├── ServiceExtAbility/         # Service extension
 │   │   │   ├── AlarmService.ets      # Alarm service
 │   │   │   └── TimerService.ets      # Timer service
-│   │   ├── IntentAbility/             # Intent handling
+│   │   ├── IntentAbility/
 │   │   │   ├── CreateAlarm.ets       # Create alarm
 │   │   │   ├── DeleteAlarm.ets       # Delete alarm
 │   │   │   └── ViewAlarm.ets         # View alarm
@@ -246,7 +246,6 @@ The following demonstrates the key steps for developing the Clock application:
 5. **Implement Alarm Function**: Use system alarm API to set alarm trigger time.
 6. **Implement Timing Function**: Use system timer to implement stopwatch and countdown.
 7. **Multi-Device Adaptation**: Use breakpoint system to implement responsive layout.
-8. **Add Accessibility Support**: Add accessibility identifiers for key UI elements.
 
 #### Code Examples
 
@@ -387,7 +386,6 @@ alarmManager.insertAlarm(alarmInfo, (success: boolean) => {
 * **Audio Management**: Use `SoundPool` to manage audio playback, avoiding frequent creation and destruction of audio players.
 * **Background Operation**: Countdown function needs to use background task management to ensure normal operation when the application is in the background.
 * **Memory Management**: Release unused resources in time to avoid memory leaks.
-* **Accessibility Support**: Set `id` and appropriate `accessibilityText` for all interactive UI elements.
 
 ## Constraints
 

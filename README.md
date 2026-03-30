@@ -229,7 +229,7 @@ Clock 应用主要使用以下 OpenHarmony API：
 | 接口名称 | 功能描述 |
 |---------|---------|
 | **@ohos.data.relationalStore** | 关系型数据库，用于存储闹钟和世界时钟数据 |
-| **@ohos.data.preferences** | 首选项，用于持久化配置和状态 |
+| **@ohos.data.preferences** | 持久化配置和状态 |
 | **@ohos.notification** | 通知管理，用于闹钟和倒计时提醒 |
 | **@ohos.multimedia.audio** | 音频管理，用于播放铃声 |
 | **@ohos.alarm** | 闹钟管理，用于设置系统闹钟 |
