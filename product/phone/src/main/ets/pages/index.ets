@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023-2024 Huawei Device Co., Ltd.
+ * Copyright (c) 2026 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -97,10 +97,9 @@ const TABLE_PAD = 2560;
 const TIME_OUT_MILLIS = 600;
 
 enum MenuIndex {
-  ALARM = 0,
-  WORLD_CLOCK = 1,
-  STOPWATCH = 2,
-  TIMER = 3
+  WORLD_CLOCK = 0,
+  STOPWATCH = 1,
+  TIMER = 2
 };
 
 interface MenuItem {
@@ -114,15 +113,6 @@ interface MenuItem {
 };
 
 const MENU_CONFIG: MenuItem[] = [
-  {
-    icon: $r('app.media.ic_alarm'),
-    iconActivated: $r('app.media.ic_alarm_activated'),
-    label: $r('app.string.alarm_clock'),
-    index: MenuIndex.ALARM,
-    defaultBgColor: Color.Transparent,
-    hoverBgColor: $r('sys.color.ohos_id_color_hover'),
-    pressBgColor: $r('sys.color.ohos_id_color_click_effect')
-  },
   {
     icon: $r('app.media.ic_world_clock'),
     iconActivated: $r('app.media.ic_world_clock_activated'),
@@ -305,11 +295,6 @@ struct Index {
 
     ResourceManager.preloadStringResources(TIME_DESC_STRING_ID_LIST);
     LogUtil.info(TAG, 'about to appear3');
-    if (this.currentIndex === MenuIndex.ALARM) {
-      await this.refreshAlarmData();
-    } else {
-      this.refreshAlarmData();
-    }
     if (this.currentIndex === MenuIndex.WORLD_CLOCK) {
       await this.refreshWorldClockData();
     } else {
@@ -484,16 +469,7 @@ struct Index {
   }
 
   changeTabs(): void {
-    if (this.currentIndex === MenuIndex.ALARM) {
-      if (this.isAlarmInit) {
-        this.isAlarmShown = true;
-      }
-      this.isAlarmInit = true;
-      this.isAlarmClockVisible = true;
-      this.isWorldClockVisible = false;
-      this.isStopWatchVisible = false;
-      this.isTimerVisible = false;
-    } else if (this.currentIndex === MenuIndex.WORLD_CLOCK) {
+    if (this.currentIndex === MenuIndex.WORLD_CLOCK) {
       if (this.isWorldClockInit) {
         this.isWorldClockShown = true;
       }
@@ -779,9 +755,7 @@ struct Index {
           offset: { xs: SMALL_SCREEN_CONTENT_OFFSET, md: SMALL_SCREEN_CONTENT_OFFSET, lg: BIG_SCREEN_CONTENT_OFFSET },
         }) {
           Row() {
-            if (this.currentIndex === MenuIndex.ALARM) {
-              this.buildTitleBar(MENU_CONFIG[this.currentIndex].label.id);
-            } else if (this.currentIndex === MenuIndex.WORLD_CLOCK) {
+            if (this.currentIndex === MenuIndex.WORLD_CLOCK) {
               this.buildTitleBar(MENU_CONFIG[this.currentIndex].label.id);
             } else if (this.currentIndex === MenuIndex.STOPWATCH) {
               this.buildTitleBar(MENU_CONFIG[this.currentIndex].label.id);
@@ -944,17 +918,6 @@ struct Index {
   buildContent(): void {
     Flex({ direction: FlexDirection.Column }) {
       Stack() {
-        if (this.isAlarmInit) {
-          AlarmClock({
-            alarmClockListFromEntry: $alarmClockList,
-            leftTimeToRingTime: $leftTimeToRingTime,
-            isAlarmClockVisible: this.isAlarmClockVisible,
-            isPortraitOrientation: this.isPortraitOrientation,
-            isBigView: this.currentBreakpoint,
-          })
-            .transition(TransitionEffect.opacity(this.isAlarmShown ? 1 : 0.99))
-            .visibility(this.isPageVisible(MenuIndex.ALARM) ? Visibility.Visible : Visibility.Hidden)
-        }
         if (this.isWorldClockInit) {
           WorldClock({
             worldClockList: $worldClockList,
