@@ -66,6 +66,14 @@
                     name="figures/install.png"
                     type="filepath"/>
                 <filteritem
+                    desc="代码架构图，无需修改"
+                    name="figures/architecture_zh.png"
+                    type="filepath"/>
+                <filteritem
+                    desc="代码架构图，无需修改"
+                    name="figures/architecture_en.png"
+                    type="filepath"/>
+                <filteritem
                     desc="应用内置资源文件，无需修改"
                     name="product/pc/src/main/resources/base/media/icon.png"
                     type="filepath"/>
@@ -207,7 +215,7 @@
                     desc="Developed by Hoperun Company"
                     filefilter="copyrightPolicyFilter"
                     group="defaultGroup"
-                    name="Copyright (c) 2022 HiHope Open Source Organization."
+                    name="Copyright (c) 2026 HiHope Open Source Organization."
                     path=".*"
                     rule="may"
                     type="copyright"/>
