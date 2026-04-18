@@ -390,10 +390,10 @@ alarmManager.insertAlarm(alarmInfo, (success: boolean) => {
 ## Constraints
 
 * **Development Environment**
-  * **DevEco Studio for OpenHarmony**: Version greater than 3.0.0.992
-  * **SDK Version**: OpenHarmony SDK API Version 9+
-  * **Compile SDK**: API Version 20
-  * **Compatible SDK**: API Version 12
+  * **DevEco Studio for OpenHarmony**: Version greater than 3.1.1.101
+  * **SDK Version**: OpenHarmony SDK API Version 23
+  * **Compile SDK**: API Version 23
+  * **Compatible SDK**: API Version 23
   * **Language Version**: ArkTS
 
 * **Dependency Libraries**
