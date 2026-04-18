@@ -392,10 +392,10 @@ alarmManager.insertAlarm(alarmInfo, (success: boolean) => {
 ## 约束
 
 * **开发环境**
-  * **DevEco Studio for OpenHarmony**: 版本号大于 3.0.0.992
-  * **SDK 版本**: OpenHarmony SDK API Version 9+
-  * **编译 SDK**: API Version 20
-  * **兼容 SDK**: API Version 12
+  * **DevEco Studio for OpenHarmony**: 版本号大于 3.1.1.101
+  * **SDK 版本**: OpenHarmony SDK API Version 23
+  * **编译 SDK**: API Version 23
+  * **兼容 SDK**: API Version 23
   * **语言版本**: ArkTS
 
 * **依赖库**
