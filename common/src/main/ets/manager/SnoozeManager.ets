@@ -38,6 +38,17 @@ class SnoozeManager {
    *
    * @return Preferences instance
    */
+  private parsePrefsWholeTokenInt(value: Object | number | string | boolean, defaultValue: number): number {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      return value;
+    }
+    const valueText: string = String(value ?? '');
+    if (/^\d+$/.test(valueText)) {
+      return Number.parseInt(valueText, 10);
+    }
+    return defaultValue;
+  }
+
   private async getPreferences(): Promise<Preferences> {
     if (this.preferences) {
       return this.preferences;
@@ -56,7 +67,7 @@ class SnoozeManager {
   async getSnoozedTimes(alarmId: string): Promise<number> {
     const preferences = await this.getPreferences();
     const snoozedTimes = await preferences.get(alarmId, 0);
-    return Number(snoozedTimes);
+    return this.parsePrefsWholeTokenInt(snoozedTimes as Object, 0);
   }
 
   /**
@@ -140,7 +151,7 @@ class SnoozeManager {
   async getNextAlertTime(alarmId: string): Promise<number> {
     const preferences = await this.getPreferences();
     const nextAlertTime = await preferences.get(SNOOZE_ID + alarmId, ALERT_TIME_DEFAULT_DATA);
-    return Number(nextAlertTime);
+    return this.parsePrefsWholeTokenInt(nextAlertTime as Object, 0);
   }
 }
 

@@ -39,6 +39,17 @@ class AlarmStateManager {
    *
    * @return Preferences instance
    */
+  private parsePrefsWholeTokenInt(value: Object | number | string | boolean, defaultValue: number): number {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      return value;
+    }
+    const valueText: string = String(value ?? '');
+    if (/^\d+$/.test(valueText)) {
+      return Number.parseInt(valueText, 10);
+    }
+    return defaultValue;
+  }
+
   private async getPreferences(): Promise<Preferences> {
     if (this.preferences) {
       return this.preferences;
@@ -71,7 +82,7 @@ class AlarmStateManager {
   async getState(): Promise<number> {
     const preferences = await this.getPreferences();
     const alarmState = await preferences.get(KEY_ALARM_STATE, STATE_IDLE);
-    return Number(alarmState);
+    return this.parsePrefsWholeTokenInt(alarmState as Object, STATE_IDLE);
   }
 
   /**
@@ -82,7 +93,7 @@ class AlarmStateManager {
   async getAlarmId(): Promise<number> {
     const preferences = await this.getPreferences();
     const alarmState = await preferences.get(KEY_ALARM_STATE_ID, DEFAULT_ALARM_ID);
-    return Number(alarmState);
+    return this.parsePrefsWholeTokenInt(alarmState as Object, DEFAULT_ALARM_ID);
   }
 
   /**
@@ -124,7 +135,7 @@ class AlarmStateManager {
     const isFiring = await this.isFiring();
     const isFiringId = await this.getAlarmId();
     LogUtil.info(TAG, `setStateStop isFiring:${isFiring} isFiringId:${isFiringId}  alarmId:${alarmId}`);
-    if (isFiring && isFiringId === Number(alarmId)) {
+    if (isFiring && isFiringId === this.parsePrefsWholeTokenInt(alarmId, -1)) {
       await this.setState(STATE_STOP, alarmId);
     }
   }

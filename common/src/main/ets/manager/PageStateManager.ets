@@ -31,6 +31,17 @@ class PageStateManager {
    *
    * @return Preferences instance
    */
+  private parsePrefsWholeTokenInt(value: Object | number | string | boolean, defaultValue: number): number {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      return value;
+    }
+    const valueText: string = String(value ?? '');
+    if (/^\d+$/.test(valueText)) {
+      return Number.parseInt(valueText, 10);
+    }
+    return defaultValue;
+  }
+
   private async getPreferences(): Promise<Preferences> {
     if (this.preferences) {
       return this.preferences;
@@ -58,7 +69,7 @@ class PageStateManager {
     const preferences = await this.getPreferences();
     const tabIndex = await preferences.get(tabIndexKey, 0);
     LogUtil.info(TAG, 'get tabIndex from Sp:' + tabIndex);
-    return Number(tabIndex);
+    return this.parsePrefsWholeTokenInt(tabIndex as Object, 0);
   }
 
   /**

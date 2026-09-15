@@ -29,6 +29,17 @@ type Preferences = preferencesUtil.Preferences;
 class TimerStateManager {
   private preferences: Preferences | undefined = undefined;
 
+  private parsePrefsWholeTokenInt(value: Object | number | string | boolean, defaultValue: number): number {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      return value;
+    }
+    const valueText: string = String(value ?? '');
+    if (/^\d+$/.test(valueText)) {
+      return Number.parseInt(valueText, 10);
+    }
+    return defaultValue;
+  }
+
   private async getPreferences(): Promise<Preferences> {
     if (this.preferences) {
       return this.preferences;
@@ -50,13 +61,13 @@ class TimerStateManager {
   async getState(): Promise<number> {
     const preferences = await this.getPreferences();
     const alarmState = await preferences.get(KEY_TIMER_STATE, STATE_IDLE);
-    return Number(alarmState);
+    return this.parsePrefsWholeTokenInt(alarmState as Object, STATE_IDLE);
   }
 
   async getAlarmId(): Promise<number> {
     const preferences = await this.getPreferences();
     const alarmState = await preferences.get(KEY_TIMER_STATE_ID, DEFAULT_ALARM_ID);
-    return Number(alarmState);
+    return this.parsePrefsWholeTokenInt(alarmState as Object, DEFAULT_ALARM_ID);
   }
 
   async setStateFiring(alarmId: string): Promise<void> {

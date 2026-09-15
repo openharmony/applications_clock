@@ -45,6 +45,17 @@ class TimerManager {
    *
    * @return 操作内部存储的对象
    */
+  private parsePrefsWholeTokenInt(value: Object | number | string | boolean, defaultValue: number): number {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+      return value;
+    }
+    const valueText: string = String(value ?? '');
+    if (/^\d+$/.test(valueText)) {
+      return Number.parseInt(valueText, 10);
+    }
+    return defaultValue;
+  }
+
   async getPreferences(): Promise<Preferences> {
     if (this.preferences) {
       return this.preferences;
@@ -62,7 +73,7 @@ class TimerManager {
   async getTimerId(): Promise<number> {
     const preferences = await this.getPreferences();
     const timerIdFromStorage = await preferences.get(ALARM_CLOCK_TIMER_ID, NO_TIMER);
-    return Number(timerIdFromStorage);
+    return this.parsePrefsWholeTokenInt(timerIdFromStorage as Object, NO_TIMER);
   }
 
   /**
@@ -73,7 +84,7 @@ class TimerManager {
   async getTriggerTime(): Promise<number> {
     const preferences = await this.getPreferences();
     const triggerTimeFromStorage = await preferences.get(ALARM_CLOCK_TRIGGER_TIME, TRIGGER_TIME_NEVER);
-    return Number(triggerTimeFromStorage);
+    return this.parsePrefsWholeTokenInt(triggerTimeFromStorage as Object, TRIGGER_TIME_NEVER);
   }
 
   /**
@@ -84,7 +95,7 @@ class TimerManager {
   async getTriggerTimeID(): Promise<number> {
     const preferences = await this.getPreferences();
     const triggerTimeIdFromStorage = await preferences.get(ALARM_CLOCK_TRIGGER_TIME_ID, TRIGGER_TIME_NEVER);
-    return Number(triggerTimeIdFromStorage);
+    return this.parsePrefsWholeTokenInt(triggerTimeIdFromStorage as Object, TRIGGER_TIME_NEVER);
   }
 
   /**
